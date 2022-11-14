@@ -14,7 +14,7 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   />
-
+  
 <section class="Section Section--spacingNormal" id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="bestseller-reel">
     <div class="TripleBenefits">
         <div class="TripleBenefits__Header">
@@ -283,12 +283,8 @@
       padding-top: 0;
     }
   }
-
-  </style>
-
   
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+  </style>
   
   <script type="text/javascript">
     document.documentElement.style.setProperty('--header-height', document.getElementById('shopify-section-header').offsetHeight + 'px');
@@ -409,7 +405,7 @@
   
   {% schema %}
   {
-    "name": "custom_TripleBenefits",
+    "name": "TripleBenefits",
     "settings": [
       {
         "type": "color",
@@ -427,8 +423,7 @@
         "type": "color",
         "id": "background",
         "label": "Background Color",
-        "default": "#
-        "
+        "default": "#ffffff"
       },
       {
         "type": "color",
@@ -531,7 +526,7 @@
       }
     ],
     "presets": [{
-      "name": "custom_TripleBenefits",
+      "name": "TripleBenefits",
       "category": "Custom"
     }]
   }
