@@ -100,6 +100,7 @@
       "settings": {
         "background": "#212121",
         "text_color": "#efefef",
+        "badge_color": "#bca170",
         "headline-1": "Schneller Versand",
         "headline-2": "Einfache Retouren",
         "headline-3": "12 Monate Garantie",
@@ -127,11 +128,46 @@
         "info_headline_3": "Qualität3",
         "info_text_3": "Leatherest entstand aus der Vision, die traditionelle Geldbörse als alltäglichen Begleiter von Grund auf umzugestalten und mit unseren modernen Bedürfnissen in Einklang zu bringen."
       }
+    },
+    "a6dff9d7-778b-4a7c-a84b-694096489c81": {
+      "type": "sk-customerReview",
+      "settings": {
+        "headline": "Ich bin eine Headline und beschreibe das Bild",
+        "subline": "Unsere Kunden haben eine klare Meinung über uns!",
+        "helplink": "\/pages\/abgabe-bewertung",
+        "subline2": "Informationen zur Authentizität von Bewertungen",
+        "img_1": "shopify:\/\/shop_images\/Team_Leatherest_Daniel.jpg",
+        "review_headline_1": "Qualität",
+        "review_subline_1": "Matterhorn Keyholder",
+        "review_date_1": "22.10.1991",
+        "review_text_1": "Leatherest entstand aus der Vision, die traditionelle Geldbörse als alltäglichen Begleiter von Grund auf umzugestalten und mit unseren modernen Bedürfnissen in Einklang zu bringen.",
+        "img_2": "shopify:\/\/shop_images\/DSC01374-3-2_Kopie.jpg",
+        "review_headline_2": "Qualität",
+        "review_subline_2": "Matterhorn Keyholder",
+        "review_date_2": "22.20.2992",
+        "review_text_2": "Leatherest entstand aus der Vision, die traditionelle Geldbörse als alltäglichen Begleiter von Grund auf umzugestalten und mit unseren modernen Bedürfnissen in Einklang zu bringen.",
+        "img_3": "shopify:\/\/shop_images\/Bildschirmfoto_2021-04-22_um_22.57.08_56cc1802-9f3c-42c2-8dea-7a407e64ee30.png",
+        "review_headline_3": "Qualität",
+        "review_subline_3": "Matterhorn Keyholder",
+        "review_date_3": "22.30.3993",
+        "review_text_3": "Leatherest entstand aus der Vision, die traditionelle Geldbörse als alltäglichen Begleiter von Grund auf umzugestalten und mit unseren modernen Bedürfnissen in Einklang zu bringen.",
+        "img_4": "shopify:\/\/shop_images\/Team_Leatherest_Daniel.jpg",
+        "review_headline_4": "Qualität",
+        "review_subline_4": "Matterhorn Keyholder",
+        "review_date_4": "22.40.4994",
+        "review_text_4": "Leatherest entstand aus der Vision, die traditionelle Geldbörse als alltäglichen Begleiter von Grund auf umzugestalten und mit unseren modernen Bedürfnissen in Einklang zu bringen.",
+        "img_5": "shopify:\/\/shop_images\/DSC01374-3-2_Kopie_99b1164e-73a8-4471-85d4-f9068f417637.jpg",
+        "review_headline_5": "Qualität",
+        "review_subline_5": "Matterhorn Keyholder",
+        "review_date_5": "22.50.5995",
+        "review_text_5": "Leatherest entstand aus der Vision, die traditionelle Geldbörse als alltäglichen Begleiter von Grund auf umzugestalten und mit unseren modernen Bedürfnissen in Einklang zu bringen."
+      }
     }
   },
   "order": [
     "slideshow",
     "fdb7e9b9-74f4-4264-a835-230f14e6b1bf",
-    "e125b751-3486-428c-9a0b-b0a8e2acd6b8"
+    "e125b751-3486-428c-9a0b-b0a8e2acd6b8",
+    "a6dff9d7-778b-4a7c-a84b-694096489c81"
   ]
 }
