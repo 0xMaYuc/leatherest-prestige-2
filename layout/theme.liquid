@@ -14,38 +14,6 @@
     {%- if page_description -%}
       <meta name="description" content="{{ page_description | escape }}">
     {%- endif -%}
-
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js" crossorigin="anonymous"></script>
-    <script src="//cdn.shopify.com/s/files/1/0412/1591/8230/t/22/assets/slick.min.js?v=71779134894361685811668434566" type="text/javascript"></script>
-    <script type="text/javascript">
-      $(document).ready(function() {
-        $('.slider-container').each(function(i, e) {
-          console.log("slider created");
-          let slider= $(this),
-              $nArrow = slider.find('.slick-next'),
-              $pArrow = slider.find('.slick-prev');
-          slider.find(".sliderClass").slick({
-            dots: false,
-            infinite: false,
-            slidesToShow: 2.3,
-            slidesToScroll: 1,
-            autoplay: false,
-            arrows: true,
-            variableWidth: false,
-            prevArrow: $pArrow,
-            nextArrow:  $nArrow
-          });
-        });
-      });
-    </script>
-      
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-  
-      
-    <script src="https://kit.fontawesome.com/6f709cdaa3.js" crossorigin="anonymous"></script>
-  
-      
     
     <link rel="canonical" href="{{ canonical_url }}">
 
@@ -223,5 +191,38 @@
 
       {% section 'footer' %}
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" crossorigin="anonymous"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('.slider-container').each(function(i, e) {
+          console.log("slider created");
+          let slider= $(this),
+              $nArrow = slider.find('.slick-next'),
+              $pArrow = slider.find('.slick-prev');
+          slider.find(".sliderClass").slick({
+            dots: false,
+            infinite: false,
+            slidesToShow: 2.3,
+            slidesToScroll: 1,
+            autoplay: false,
+            arrows: true,
+            variableWidth: false,
+            prevArrow: $pArrow,
+            nextArrow:  $nArrow
+          });
+        });
+      });
+    </script>
+      
+  
+  
+      
+    <script src="https://kit.fontawesome.com/6f709cdaa3.js" crossorigin="anonymous"></script>
+  
+    
   </body>
 </html>
