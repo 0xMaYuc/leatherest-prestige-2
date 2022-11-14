@@ -1,1 +1,119 @@
-{"sections":{"slideshow":{"type":"slideshow","blocks":{"slide-0":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/DSC09088.jpg","apply_overlay":true,"content_position":"bottomLeft","subheading":"","title":"Kompaktes Design","button_1_text":"","button_1_link":"","button_2_text":"","button_2_link":""}},"slide-1":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/DSC04509.jpg","mobile_image":"shopify:\/\/shop_images\/DSC04514.jpg","apply_overlay":true,"content_position":"bottomLeft","subheading":"","title":"Minimalistische Geldbörsen","button_1_text":"","button_1_link":"","button_2_text":"","button_2_link":""}},"2365c5f9-ce6d-4170-bae6-1746b54be7fe":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/DSC00535-2_6e1e4d38-1100-44bb-b770-7ad135ff82b0.jpg","mobile_image":"shopify:\/\/shop_images\/DSC09175-2_2.jpg","apply_overlay":true,"content_position":"bottomLeft","subheading":"","title":"Smarte Accessoires","button_1_text":"","button_1_link":"","button_2_text":"","button_2_link":""}},"3cc30283-c788-404a-8112-21489f855a24":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/DSC02366-2.jpg","mobile_image":"shopify:\/\/shop_images\/37F92A8D-F22F-4D23-81FA-7AE779D4F143.jpg","apply_overlay":true,"content_position":"bottomLeft","subheading":"","title":"Pop-Up Kartenmechanismus","button_1_text":"","button_1_link":"","button_2_text":"","button_2_link":""}},"29f63d30-ada0-4245-b947-dd548180dd98":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/DSC00574-4-2_ef5608ad-a3cd-4696-9709-798f7a4a9657.jpg","mobile_image":"shopify:\/\/shop_images\/DSC02564-2-2.jpg","apply_overlay":true,"content_position":"bottomLeft","subheading":"","title":"Hochwertiges Leder","button_1_text":"","button_1_link":"","button_2_text":"","button_2_link":""}}},"block_order":["slide-0","slide-1","2365c5f9-ce6d-4170-bae6-1746b54be7fe","3cc30283-c788-404a-8112-21489f855a24","29f63d30-ada0-4245-b947-dd548180dd98"],"settings":{"show_fullscreen":true,"show_arrow":false,"autoplay":true,"cycle_speed":5,"text_color":"#ffffff","button_color":"#363636","button_background":"#ffffff"}}},"order":["slideshow"]}
+{
+  "sections": {
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "slide-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/DSC09088.jpg",
+            "apply_overlay": true,
+            "content_position": "bottomLeft",
+            "subheading": "",
+            "title": "Kompaktes Design",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": ""
+          }
+        },
+        "slide-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/DSC04509.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/DSC04514.jpg",
+            "apply_overlay": true,
+            "content_position": "bottomLeft",
+            "subheading": "",
+            "title": "Minimalistische Geldbörsen",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": ""
+          }
+        },
+        "2365c5f9-ce6d-4170-bae6-1746b54be7fe": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/DSC00535-2_6e1e4d38-1100-44bb-b770-7ad135ff82b0.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/DSC09175-2_2.jpg",
+            "apply_overlay": true,
+            "content_position": "bottomLeft",
+            "subheading": "",
+            "title": "Smarte Accessoires",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": ""
+          }
+        },
+        "3cc30283-c788-404a-8112-21489f855a24": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/DSC02366-2.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/37F92A8D-F22F-4D23-81FA-7AE779D4F143.jpg",
+            "apply_overlay": true,
+            "content_position": "bottomLeft",
+            "subheading": "",
+            "title": "Pop-Up Kartenmechanismus",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": ""
+          }
+        },
+        "29f63d30-ada0-4245-b947-dd548180dd98": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/DSC00574-4-2_ef5608ad-a3cd-4696-9709-798f7a4a9657.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/DSC02564-2-2.jpg",
+            "apply_overlay": true,
+            "content_position": "bottomLeft",
+            "subheading": "",
+            "title": "Hochwertiges Leder",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide-0",
+        "slide-1",
+        "2365c5f9-ce6d-4170-bae6-1746b54be7fe",
+        "3cc30283-c788-404a-8112-21489f855a24",
+        "29f63d30-ada0-4245-b947-dd548180dd98"
+      ],
+      "settings": {
+        "show_fullscreen": true,
+        "show_arrow": false,
+        "autoplay": true,
+        "cycle_speed": 5,
+        "text_color": "#ffffff",
+        "button_color": "#363636",
+        "button_background": "#ffffff"
+      }
+    },
+    "fdb7e9b9-74f4-4264-a835-230f14e6b1bf": {
+      "type": "sk-shopProperties",
+      "settings": {
+        "background": "#ffffff",
+        "text_color": "#ffffff",
+        "badge_color": "#ffffff",
+        "subheader_1": "Subline",
+        "headline-1": "Headline",
+        "subheader_2": "Subline",
+        "headline-2": "Headline",
+        "subheader_3": "Subline",
+        "headline-3": "Headline",
+        "subheader_4": "Subline",
+        "headline-4": "Headline"
+      }
+    }
+  },
+  "order": [
+    "slideshow",
+    "fdb7e9b9-74f4-4264-a835-230f14e6b1bf"
+  ]
+}
