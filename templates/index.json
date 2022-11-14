@@ -195,6 +195,15 @@
         "btntext": "Weitere Fragen anzeigen",
         "btnlink": "\/pages\/contact"
       }
+    },
+    "c4647242-f342-4a57-814a-4417b4741033": {
+      "type": "sk-testimonial",
+      "settings": {
+        "background": "#ffffff",
+        "testimonialText": "Ich bin begeistert!",
+        "imagesupport": "shopify:\/\/shop_images\/Bildschirmfoto_2021-04-22_um_22.57.08_56cc1802-9f3c-42c2-8dea-7a407e64ee30.png",
+        "testimonialName": "Andrea L."
+      }
     }
   },
   "order": [
@@ -203,6 +212,7 @@
     "e125b751-3486-428c-9a0b-b0a8e2acd6b8",
     "a6dff9d7-778b-4a7c-a84b-694096489c81",
     "0f34bd72-c497-489f-af4b-fadad8abef0e",
-    "d7ee41d6-f3f3-4da8-bbb2-552896797292"
+    "d7ee41d6-f3f3-4da8-bbb2-552896797292",
+    "c4647242-f342-4a57-814a-4417b4741033"
   ]
 }
