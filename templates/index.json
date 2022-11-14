@@ -98,17 +98,40 @@
     "fdb7e9b9-74f4-4264-a835-230f14e6b1bf": {
       "type": "sk-shopProperties",
       "settings": {
-        "background": "#cfc9c9",
-        "text_color": "#000000",
+        "background": "#212121",
+        "text_color": "#efefef",
         "headline-1": "Schneller Versand",
         "headline-2": "Einfache Retouren",
         "headline-3": "12 Monate Garantie",
         "headline-4": "25.354+ glückliche Kundinnen"
       }
+    },
+    "e125b751-3486-428c-9a0b-b0a8e2acd6b8": {
+      "type": "sk-triple-benefits",
+      "settings": {
+        "text_color": "#000000",
+        "header_color": "#bca170",
+        "background": "#f4f4f4",
+        "badge_background": "#000000",
+        "badge_text": "#ffffff",
+        "sub_headline": "ABSOFORT VEFÜGBAR",
+        "headline": "Unsere Werte",
+        "subline": "Seit über 25 Jahren gestaltet und baut Lorem – Lorem Ipsum, Dolor",
+        "badge_1": "New Release",
+        "info_headline_1": "Qualität1",
+        "info_text_1": "Leatherest entstand aus der Vision, die traditionelle Geldbörse als alltäglichen Begleiter von Grund auf umzugestalten und mit unseren modernen Bedürfnissen in Einklang zu bringen.",
+        "badge_2": "New Release",
+        "info_headline_2": "Qualität2",
+        "info_text_2": "Leatherest entstand aus der Vision, die traditionelle Geldbörse als alltäglichen Begleiter von Grund auf umzugestalten und mit unseren modernen Bedürfnissen in Einklang zu bringen.",
+        "badge_3": "New Release",
+        "info_headline_3": "Qualität3",
+        "info_text_3": "Leatherest entstand aus der Vision, die traditionelle Geldbörse als alltäglichen Begleiter von Grund auf umzugestalten und mit unseren modernen Bedürfnissen in Einklang zu bringen."
+      }
     }
   },
   "order": [
     "slideshow",
-    "fdb7e9b9-74f4-4264-a835-230f14e6b1bf"
+    "fdb7e9b9-74f4-4264-a835-230f14e6b1bf",
+    "e125b751-3486-428c-9a0b-b0a8e2acd6b8"
   ]
 }
