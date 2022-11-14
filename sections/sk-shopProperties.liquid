@@ -139,8 +139,14 @@
   @media screen and (max-width: 420px) {
     .shopProperties__Wrapper:not(.shopProperties__Wrapper--product)
     .shopProperty:nth-of-type(odd) {
-    margin-left: 20px;
+        margin-left: 20px;
+   }
   }
+  @media screen and (max-width: 420px) {
+    .shopProperties__Wrapper:not(.shopProperties__Wrapper--product)
+    .shopProperty:nth-of-type(even) > span > h4 {
+        margin-left: 20px;
+   }
   }
   
   @media screen and (min-width: 1041px) {
