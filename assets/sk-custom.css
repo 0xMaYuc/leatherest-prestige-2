@@ -381,31 +381,6 @@
 
 /* Contact - Help */
 
-.sk_help .Section__ContactImages {
-  max-width: 500px;
-  margin: 0 auto 40px;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-}
-
-.sk_help .FeatureText__ImageWrapper {
-  background: #fafafa;
-  box-shadow: 0 5px 15px #00000026;
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  padding: 16px;
-}
-
-.sk_help .FeatureText__ContentWrapper {
-  margin-bottom: 40px;
-}
-
-.sk_help .Contact__ImageTitle {
-  margin-top: 15px;
-}
-
 /* Product Description */
 @media screen and (min-width: 641px) {
   .ProductMeta__Description {
