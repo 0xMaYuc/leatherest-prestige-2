@@ -98,8 +98,8 @@
     "fdb7e9b9-74f4-4264-a835-230f14e6b1bf": {
       "type": "sk-shopProperties",
       "settings": {
-        "background": "#cfc9c9",
-        "text_color": "#000000",
+        "background": "#212121",
+        "text_color": "#efefef",
         "headline-1": "Schneller Versand",
         "headline-2": "Einfache Retouren",
         "headline-3": "12 Monate Garantie",
