@@ -654,3 +654,28 @@ ul.SK_Payment_Methods {
 }
 
 /* SHOP Properties */
+.SK_ProductForm__ShopProperties {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 4px -4px;
+}
+.SK_ProductForm__ShopProperty_Container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f4f5;
+  border-radius: 4px;
+  padding: 8px 4px;
+}
+.SK_ProductForm__ShopProperty {
+  width: 50%;
+  padding: 4px;
+}
+.SK_ProductForm__ShopProperty_Image {
+  margin-right: 10px;
+}
+
+.SK_ProductForm__ShopProperty_Text {
+  color: #000;
+  font-size: 8px;
+}
