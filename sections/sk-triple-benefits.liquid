@@ -10,14 +10,14 @@
         <div class="TripleBenefits__reel">
           <div class="TripleBenefits__reel-track">
 
-     
+          {% if settings.slick_carousel_activate %}
 
           <div class="slider-container--triple">
             <button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="display: block;">Previous</button>
             <div class="slider sliderTriple slider-custom">
 
-      
-
+              {% endif %}
+              
             <div class="TripleBenefits__reel-img">
               <div class="TripleBenefits__badge">
                 <span>
@@ -42,11 +42,15 @@
               </div>
               <img src="{{ section.settings.product_3 | img_url: '1024x1024' }}" alt="{{ section.settings.product_3 }}" />
             </div>
-          
+
+            {% if settings.slick_carousel_activate %}
+
               </div>
               <button class="slick-next slick-arrow" aria-label="Next" type="button" style="display: block;">Next</button>
             </div>
-         
+
+          {% endif %}
+          
           </div>
         </div>
         <div class="TripleBenefits__details">
