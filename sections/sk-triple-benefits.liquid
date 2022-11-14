@@ -1,0 +1,516 @@
+<section class="Section Section--spacingNormal" id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="bestseller-reel">
+    <div class="TripleBenefits">
+        <div class="TripleBenefits__Header">
+          <h3 class="Heading">{{ section.settings.headline }}</h3>
+        </div>
+      <div class="TripleBenefits__Wrapper">
+        <div class="TripleBenefits__reel">
+          <div class="TripleBenefits__reel-track">
+          {% if settings.slick_carousel_activate %}
+          <div class="slider-container--triple">
+            <button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="display: block;">Previous</button>
+            <div class="slider sliderTriple slider-custom">
+              {% endif %}
+            <div class="TripleBenefits__reel-img">
+              <div class="TripleBenefits__badge">
+                <span>
+                  {{ section.settings.badge_1 }}
+                </span>
+              </div>
+              <img src="{{ section.settings.product_1 | img_url: '1024x1024' }}" alt="{{ section.settings.product_1 }}" />
+            </div>
+            <div class="TripleBenefits__reel-img TripleBenefits__reel-img--active">
+              <div class="TripleBenefits__badge">
+                <span>
+                  {{ section.settings.badge_2 }}
+                </span>
+              </div>
+              <img src="{{ section.settings.product_2 | img_url: '1024x1024' }}" alt="{{ section.settings.product_2 }}" />
+            </div>
+            <div class="TripleBenefits__reel-img">
+              <div class="TripleBenefits__badge">
+                <span>
+                  {{ section.settings.badge_3 }}
+                </span>
+              </div>
+              <img src="{{ section.settings.product_3 | img_url: '1024x1024' }}" alt="{{ section.settings.product_3 }}" />
+            </div>
+            {% if settings.slick_carousel_activate %}
+              </div>
+              <button class="slick-next slick-arrow" aria-label="Next" type="button" style="display: block;">Next</button>
+            </div>
+          {% endif %}
+          </div>
+        </div>
+        <div class="TripleBenefits__details">
+          <div class="Container">
+            <div class="TripleBenefits__details-info" id="TB_info_1">
+              <h2 class="Heading">{{ section.settings.info_headline_1 }}</h2>
+              <p>{{ section.settings.info_text_1 }}</p>
+            </div>
+            <div class="TripleBenefits__details-info TripleBenefits__details-info--active" id="TB_info_2">
+              <h2 class="Heading">{{ section.settings.info_headline_2 }}</h2>
+              <p>{{ section.settings.info_text_2 }}</p>
+            </div>
+            <div class="TripleBenefits__details-info" id="TB_info_3">
+              <h2 class="Heading">{{ section.settings.info_headline_3 }}</h2>
+              <p>{{ section.settings.info_text_3 }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <style>
+    #section-{{ section.id }} {
+      color: {{ section.settings.text_color }};
+    }
+  
+    .TripleBenefits__details-info h2{
+      color: {{ section.settings.header_color }};
+    }
+  
+    .TripleBenefits__reel {
+      background: {{ section.settings.background }};
+    }
+  
+    @media screen and (max-width: 1041px){
+      .TripleBenefits__Header,
+      .TripleBenefits__details {
+        background: {{ section.settings.background }};
+      }
+    }
+  
+    .TripleBenefits__badge {
+      background: {{ section.settings.badge_background }};
+      color: {{ section.settings.badge_text }};
+    }
+  
+
+
+    /*TripleBenefits*/
+
+.TripleBenefits {
+    overflow: hidden;
+  }
+  
+  .TripleBenefits__Header {
+    margin-bottom: 0;
+    padding-top: 64px;
+    display: block;
+    text-align: center;
+  }
+  
+  .TripleBenefits__Header h3 {
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 400;
+    max-width: 640px;
+    margin: 0 auto;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: 4.2px;
+  }
+  
+  .TripleBenefits__reel {
+    padding: 40px 0 24px;
+    position: relative;
+  }
+  
+  .TripleBenefits__reel::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #f4f4f4;
+    clear: both;
+  }
+  
+  .TripleBenefits__reel-img {
+    max-height: 520px;
+    max-width: 480px;
+    /*min-width: 300px;*/
+    object-fit: cover;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s 0s ease-in-out;
+  }
+  
+  .TripleBenefits__badge {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 8px;
+    text-align: center;
+    line-height: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  }
+  
+  .TripleBenefits__reel-track {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 1640px;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+  
+  .TripleBenefits__details {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 64px;
+  }
+  
+  .TripleBenefits__details-info {
+    text-align: center;
+    display: none;
+    opacity: 0;
+    max-width: 764px;
+    position: relative;
+  }
+  
+  @media screen and (min-width: 768px){
+    .TripleBenefits__reel-img {
+      width: 480px;
+    }
+  
+    .TripleBenefits__reel-img--active {
+      transform: scale(1.14);
+      max-height: none;
+      transition: all 0.2s 0s ease-in-out;
+      z-index: 3;
+      box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.32);
+    }
+  
+    .TripleBenefits__reel {
+      padding: 80px 14px 24px;
+    }
+  
+    .TripleBenefits__reel-img:nth-of-type(2) {
+      margin: 0 30px;
+    }
+  
+    .TripleBenefits__details {
+      padding-top: 24px;
+    }
+  }
+  
+  .TripleBenefits__details-info h2{
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 36px;
+    letter-spacing: 3px;
+  }
+  
+  .TripleBenefits__details-info p{
+    font-weight: 200;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 26px;
+  }
+  
+  .TripleBenefits__details-info--active {
+    opacity: 1;
+    display: block;
+    position: relative;
+    animation: 0.9s 0s slideInBottomFade ease-in-out;
+  }
+  
+  @media screen and (min-width: 1041px) {
+    .TripleBenefits__Header h3 {
+      font-size: 32px;
+      line-height: 40px;
+      letter-spacing: 4.8px
+    }
+  
+    .TripleBenefits__details-info h2 {
+      font-size: 32px;
+      line-height: 36px;
+      letter-spacing: 4.8px;
+      margin-bottom: 24px;
+    }
+  
+    .TripleBenefits__details-info p {
+      font-size: 18px;
+      line-height: 28px;
+      letter-spacing: 0;
+    }
+  
+    .TripleBenefits__details {
+      padding-top: 44px;
+      padding-bottom: 0;
+    }
+  
+    .TripleBenefits__reel{
+      padding: 80px 20px;
+    }
+  
+    .TripleBenefits__Header {
+      margin-bottom: 64px;
+      padding-top: 0;
+    }
+  }
+  
+  </style>
+  
+  <script type="text/javascript">
+    document.documentElement.style.setProperty('--header-height', document.getElementById('shopify-section-header').offsetHeight + 'px');
+  
+    let imageItems = document.getElementsByClassName("TripleBenefits__reel-img");
+    let infoItems = document.getElementsByClassName("TripleBenefits__details-info");
+  
+    function removeAllOthers(){
+      let activeOthers = document.getElementsByClassName("TripleBenefits__reel-img--active");
+      for(let item of activeOthers){
+        item.classList.remove("TripleBenefits__reel-img--active");
+      }
+    }
+  
+    function removeAllOtherDetails(){
+      let activeInfos = document.getElementsByClassName("TripleBenefits__details-info--active");
+      for(let item of activeInfos){
+        item.classList.remove("TripleBenefits__details-info--active");
+      }
+    }
+  
+    for(let i = 0; i < imageItems.length; i++) {
+  
+      imageItems[i].addEventListener("click", (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        removeAllOthers();
+        imageItems[i].classList.toggle("TripleBenefits__reel-img--active");
+        removeAllOtherDetails();
+        infoItems[i].classList.toggle("TripleBenefits__details-info--active");
+      })
+  
+    }
+  
+    let container = document.getElementsByClassName('TripleBenefits__reel')[0];
+    let colToScrollTo = imageItems[1];
+    //Scroll to middle
+    container.scrollLeft = (colToScrollTo.offsetLeft - 40);
+  
+    window.onload = () => {
+  
+      let $nArrow = $('.slider-container--triple .sliderTriple').find('.slick-next'),
+          $pArrow = $('.slider-container--triple .sliderTriple').find('.slick-prev');
+  
+      let tripleSliderSettings = {
+        dots: true,
+        infinite: false,
+        autoplay: false,
+        arrows: false,
+        centerMode: true,
+        centerPadding: '60px',
+        variableWidth: true,
+        prevArrow: $pArrow,
+        nextArrow:  $nArrow,
+        mobileFirst: false,
+        responsive: [
+          {
+            breakpoint: 9999,
+            settings: "unslick"
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              variableWidth: false,
+              centerMode: true
+            }
+          }
+        ]
+      };
+  
+      $('.slider-container--triple .sliderTriple').slick(tripleSliderSettings);
+  
+      function reInitSlider() {
+        if(!$(".sliderTriple").hasClass("slick-initialized")){
+          $(".sliderTriple").slick(tripleSliderSettings);
+        }
+      }
+  
+      $(".sliderTriple").on('breakpoint', (event, slick, breakpoint) => {
+        if(breakpoint === 1024){
+          reInitSlider();
+        }else if(breakpoint === 768){
+          reInitSlider();
+        }
+      });
+  
+      $(".sliderTriple").on('afterChange', (slick, currentSlide) => {
+        if(window.matchMedia("(max-width: 768px)")){
+          removeAllOthers();
+          imageItems[currentSlide.currentSlide].classList.toggle("TripleBenefits__reel-img--active");
+          removeAllOtherDetails();
+          infoItems[currentSlide.currentSlide].classList.toggle("TripleBenefits__details-info--active");
+        }
+        console.log("currentbr", currentSlide.currentBreakpoint)
+        console.log("currentSLide", currentSlide.currentSlide)
+      });
+  
+      $(window).on('resize', function(){
+        if($(window).width() < 768){
+          reInitSlider();
+          removeAllOthers();
+          imageItems[0].classList.toggle("TripleBenefits__reel-img--active");
+          removeAllOtherDetails();
+          infoItems[0].classList.toggle("TripleBenefits__details-info--active");
+        }else if($(window).width() < 1024) {
+          reInitSlider();
+          removeAllOthers();
+          imageItems[1].classList.toggle("TripleBenefits__reel-img--active");
+          removeAllOtherDetails();
+          infoItems[1].classList.toggle("TripleBenefits__details-info--active");
+        }
+      });
+    }
+  
+  </script>
+  
+  {% schema %}
+  {
+    "name": "TripleBenefits",
+    "settings": [
+      {
+        "type": "color",
+        "id": "text_color",
+        "label": "Text Color",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "header_color",
+        "label": "Info Header Color",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "background",
+        "label": "Background Color",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "badge_background",
+        "label": "Badge Background Color",
+        "default": "#000"
+      },
+      {
+        "type": "color",
+        "id": "badge_text",
+        "label": "Badge Text Color",
+        "default": "#fff"
+      },
+      {
+        "type": "text",
+        "id": "sub_headline",
+        "label": "Sub Headline",
+        "default": "ABSOFORT VEFÜGBAR"
+      },
+      {
+        "type": "text",
+        "id": "headline",
+        "label": "Headline",
+        "default": "Ich bin eine Headline und beschreibe das Bild"
+      },
+      {
+        "type": "text",
+        "id": "subline",
+        "label": "Subline",
+        "default": "Seit über 25 Jahren gestaltet und baut Lorem – Lorem Ipsum, Dolor"
+      },
+      {
+        "type": "image_picker",
+        "id": "product_1",
+        "label": "Image #1"
+      },
+      {
+        "type": "text",
+        "id": "badge_1",
+        "label": "Badge #1",
+        "default": "New Release"
+      },
+      {
+        "type": "text",
+        "id": "info_headline_1",
+        "label": "Info Headline #1",
+        "default": "Qualität1"
+      },
+      {
+        "type": "text",
+        "id": "info_text_1",
+        "label": "Info Text #1",
+        "default": "Leatherest entstand aus der Vision, die traditionelle Geldbörse als alltäglichen Begleiter von Grund auf umzugestalten und mit unseren modernen Bedürfnissen in Einklang zu bringen."
+      },
+      {
+        "type": "image_picker",
+        "id": "product_2",
+        "label": "Image #2"
+      },
+      {
+        "type": "text",
+        "id": "badge_2",
+        "label": "Badge #2",
+        "default": "New Release"
+      },
+      {
+        "type": "text",
+        "id": "info_headline_2",
+        "label": "Info Headline #2",
+        "default": "Qualität2"
+      },
+      {
+        "type": "text",
+        "id": "info_text_2",
+        "label": "Info Text #2",
+        "default": "Leatherest entstand aus der Vision, die traditionelle Geldbörse als alltäglichen Begleiter von Grund auf umzugestalten und mit unseren modernen Bedürfnissen in Einklang zu bringen."
+      },
+      {
+        "type": "image_picker",
+        "id": "product_3",
+        "label": "Image #3"
+      },
+      {
+        "type": "text",
+        "id": "badge_3",
+        "label": "Badge #3",
+        "default": "New Release"
+      },
+      {
+        "type": "text",
+        "id": "info_headline_3",
+        "label": "Info Headline #3",
+        "default": "Qualität3"
+      },
+      {
+        "type": "text",
+        "id": "info_text_3",
+        "label": "Info Text #3",
+        "default": "Leatherest entstand aus der Vision, die traditionelle Geldbörse als alltäglichen Begleiter von Grund auf umzugestalten und mit unseren modernen Bedürfnissen in Einklang zu bringen."
+      }
+    ],
+    "presets": [{
+      "name": "TripleBenefits",
+      "category": "Custom"
+    }]
+  }
+  {% endschema %}
