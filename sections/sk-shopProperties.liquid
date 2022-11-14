@@ -44,8 +44,11 @@
   margin-right:10px;
 }
 
+  .shopProperty h4 {
+    color: {{ section.settings.text_color }};
+  }
   .shopProperty svg {
-  
+    fill: {{ section.settings.badge_color }};
     height: 48px;
     width: 48px;
     margin-right: 32px;
@@ -200,6 +203,12 @@
       "id": "text_color",
       "label": "Text-Farbe",
       "default": "#ffffff"
+    },
+    {
+    "type": "color",
+    "id": "badge_color",
+    "label": "TrustBadge-Farbe",
+    "default": "#bca170"
     },
     {
       "type": "text",
