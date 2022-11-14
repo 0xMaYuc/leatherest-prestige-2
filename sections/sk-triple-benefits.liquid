@@ -14,7 +14,7 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   />
-
+  
 <section class="Section Section--spacingNormal" id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="bestseller-reel">
     <div class="TripleBenefits">
         <div class="TripleBenefits__Header">
@@ -283,7 +283,7 @@
       padding-top: 0;
     }
   }
-
+  
   </style>
 
 
@@ -406,7 +406,7 @@
   
   {% schema %}
   {
-    "name": "custom_TripleBenefits",
+    "name": "TripleBenefits",
     "settings": [
       {
         "type": "color",
@@ -424,8 +424,7 @@
         "type": "color",
         "id": "background",
         "label": "Background Color",
-        "default": "#
-        "
+        "default": "#ffffff"
       },
       {
         "type": "color",
@@ -528,7 +527,7 @@
       }
     ],
     "presets": [{
-      "name": "custom_TripleBenefits",
+      "name": "TripleBenefits",
       "category": "Custom"
     }]
   }
