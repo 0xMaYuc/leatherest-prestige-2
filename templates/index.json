@@ -134,8 +134,8 @@
       "settings": {
         "headline": "Ich bin eine Headline und beschreibe das Bild",
         "subline": "Unsere Kunden haben eine klare Meinung über uns!",
-        "helplink": "\/pages\/abgabe-bewertung",
         "subline2": "Informationen zur Authentizität von Bewertungen",
+        "helplink": "\/pages\/abgabe-bewertung",
         "img_1": "shopify:\/\/shop_images\/Team_Leatherest_Daniel.jpg",
         "review_headline_1": "Qualität",
         "review_subline_1": "Matterhorn Keyholder",
@@ -162,12 +162,25 @@
         "review_date_5": "22.50.5995",
         "review_text_5": "Leatherest entstand aus der Vision, die traditionelle Geldbörse als alltäglichen Begleiter von Grund auf umzugestalten und mit unseren modernen Bedürfnissen in Einklang zu bringen."
       }
+    },
+    "0f34bd72-c497-489f-af4b-fadad8abef0e": {
+      "type": "sk-help",
+      "settings": {
+        "background": "#ffffff",
+        "imagesupport": "shopify:\/\/shop_images\/Bildschirmfoto_2021-04-22_um_22.57.08_56cc1802-9f3c-42c2-8dea-7a407e64ee30.png",
+        "headline": "Wir helfen Dir gerne weiter!",
+        "subline": "Benötigst du eine Beratung oder Hilfe bei deiner Bestellung?",
+        "pictext": "Text",
+        "btntext": "Jetzt kontaktieren",
+        "helplink": "mailto:support@leatherest.de"
+      }
     }
   },
   "order": [
     "slideshow",
     "fdb7e9b9-74f4-4264-a835-230f14e6b1bf",
     "e125b751-3486-428c-9a0b-b0a8e2acd6b8",
-    "a6dff9d7-778b-4a7c-a84b-694096489c81"
+    "a6dff9d7-778b-4a7c-a84b-694096489c81",
+    "0f34bd72-c497-489f-af4b-fadad8abef0e"
   ]
 }
