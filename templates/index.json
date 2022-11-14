@@ -105,10 +105,33 @@
         "headline-3": "12 Monate Garantie",
         "headline-4": "25.354+ glückliche Kundinnen"
       }
+    },
+    "e125b751-3486-428c-9a0b-b0a8e2acd6b8": {
+      "type": "sk-triple-benefits",
+      "settings": {
+        "text_color": "#ffffff",
+        "header_color": "#ffffff",
+        "background": "#c7c7c7",
+        "badge_background": "#000",
+        "badge_text": "#fff",
+        "sub_headline": "ABSOFORT VEFÜGBAR",
+        "headline": "Ich bin eine Headline und beschreibe das Bild",
+        "subline": "Seit über 25 Jahren gestaltet und baut Lorem – Lorem Ipsum, Dolor",
+        "badge_1": "New Release",
+        "info_headline_1": "Qualität1",
+        "info_text_1": "Leatherest entstand aus der Vision, die traditionelle Geldbörse als alltäglichen Begleiter von Grund auf umzugestalten und mit unseren modernen Bedürfnissen in Einklang zu bringen.",
+        "badge_2": "New Release",
+        "info_headline_2": "Qualität2",
+        "info_text_2": "Leatherest entstand aus der Vision, die traditionelle Geldbörse als alltäglichen Begleiter von Grund auf umzugestalten und mit unseren modernen Bedürfnissen in Einklang zu bringen.",
+        "badge_3": "New Release",
+        "info_headline_3": "Qualität3",
+        "info_text_3": "Leatherest entstand aus der Vision, die traditionelle Geldbörse als alltäglichen Begleiter von Grund auf umzugestalten und mit unseren modernen Bedürfnissen in Einklang zu bringen."
+      }
     }
   },
   "order": [
     "slideshow",
-    "fdb7e9b9-74f4-4264-a835-230f14e6b1bf"
+    "fdb7e9b9-74f4-4264-a835-230f14e6b1bf",
+    "e125b751-3486-428c-9a0b-b0a8e2acd6b8"
   ]
 }
