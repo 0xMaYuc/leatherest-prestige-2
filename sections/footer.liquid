@@ -226,6 +226,12 @@
       mix-blend-mode: luminosity;
       opacity: 0.5;
     }
+    .Footer:after {
+      content: ' ';
+     
+      mix-blend-mode: normal;
+      opacity: 1;
+    }
     .Footer-bottom {
       background: {{ section.settings.background-footer-bottom}};
       color: {{ section.settings.text-color}};
@@ -246,7 +252,7 @@
     gap: 7px;
   }
   .Footer__Aside .shopProperties .shopProperties__Wrapper .shopProperty > span > h4 {
-    color: #fff;
+    color: #000;
   }
 
 
