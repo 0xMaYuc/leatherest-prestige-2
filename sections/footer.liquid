@@ -1,3 +1,4 @@
+<div class="ImageHero__ImageWrapper">
 <footer {% if section.settings.imagesupport %}style="background-image: url({{ section.settings.imagesupport | img_url: 'master' }});"{% endif %} id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="footer" class="Footer {% if section.blocks.size <= 2 %}Footer--center{% endif %}" role="contentinfo">
   <div class="Container">
     {%- if section.blocks.size > 0 -%}
@@ -159,6 +160,7 @@
     </div>
   </div>
 </footer>
+</div>
 
 {%- if settings.footer_background == settings.background -%}
   <style>
@@ -166,7 +168,7 @@
       border-top: 1px solid var(--border-color);
     }
 
-    .Footer__Background-Image .ImageHero__ImageWrapper {
+    .ImageHero__ImageWrapper {
       mix-blend-mode: luminosity;
       background: rgba(0, 0, 0, 0.58) 0% 0% no-repeat padding-box;
       opacity: .5;
