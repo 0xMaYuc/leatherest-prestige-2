@@ -56,12 +56,10 @@
                     </div>
                   </div>
                 {%- else -%}
-                  <a href="{{ link.url }}" class="Collapsible__Button Heading Link Link--primary u-h6">
-                    <div class="custom-nav-icon">
-                      <i class="fa-regular fa-square-minus"></i>
-                    </div>
-                    {{ link.title | escape }}
-                  </a>
+                   <a href="{{ link.url }}" class="Collapsible__Button Heading Link Link--primary u-h6">
+                      <i class="custom-nav-icon fa-regular fa-square-minus"></i>
+                      {{ link.title | escape }}
+                   </a>
                 {%- endif -%}
               </div>
             {%- endfor -%}
@@ -161,7 +159,7 @@
 
 <style>
 
-  .custom-nav-icon > i {
+  i.custom-nav-icon {
     margin-right: 5px;
     color: {{section.settings.iconColor}};
   }
