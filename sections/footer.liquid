@@ -67,6 +67,36 @@
     {%- endif -%}
 
     <div class="Footer__Aside">
+      <div class="shopProperties Container">
+        <div class="shopProperties__Wrapper">
+            <div class="shopProperty">
+              <i class="fa-solid fa-truck-fast fa-2xl"></i>
+              <span>
+                <h4 class="Headline">{{ section.settings.headline-1 }}</h4>
+              </span>
+            </div>
+            <div class="shopProperty">
+              <i class="fa-solid fa-arrow-rotate-left fa-2xl"></i>
+              <span>
+                <h4 class="Headline">{{ section.settings.headline-2 }}</h4>
+              </span>
+            </div>
+            <div class="shopProperty">
+              <i class="fa-regular fa-circle-check fa-2xl"></i>
+              <span>
+                <h4 class="Headline">{{ section.settings.headline-3 }}</h4>
+              </span>
+            </div>
+            <div class="shopProperty">
+              <i class="fa-solid fa-thumbs-up fa-2xl"></i>
+              <span>
+                <h4 class="Headline">{{ section.settings.headline-4 }}</h4>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {%- if section.settings.show_country_selector and localization.available_countries.size > 1 -%}
         {%- assign country_selector = true -%}
       {%- endif -%}
@@ -138,36 +168,6 @@
           {%- endform -%}
         </div>
       {%- endif -%}
-
-       <div class="shopProperties Container">
-        <div class="shopProperties__Wrapper">
-            <div class="shopProperty">
-              <i class="fa-solid fa-truck-fast fa-2xl"></i>
-              <span>
-                <h4 class="Headline">{{ section.settings.headline-1 }}</h4>
-              </span>
-            </div>
-            <div class="shopProperty">
-              <i class="fa-solid fa-arrow-rotate-left fa-2xl"></i>
-              <span>
-                <h4 class="Headline">{{ section.settings.headline-2 }}</h4>
-              </span>
-            </div>
-            <div class="shopProperty">
-              <i class="fa-regular fa-circle-check fa-2xl"></i>
-              <span>
-                <h4 class="Headline">{{ section.settings.headline-3 }}</h4>
-              </span>
-            </div>
-            <div class="shopProperty">
-              <i class="fa-solid fa-thumbs-up fa-2xl"></i>
-              <span>
-                <h4 class="Headline">{{ section.settings.headline-4 }}</h4>
-              </span>
-            </div>
-          </div>
-        </div>
-    </div>
 
       <div class="Footer__Copyright">
         <a href="{{ routes.root_url }}" class="Footer__StoreName Heading u-h7 Link Link--secondary">© {{ shop.name }}</a>
