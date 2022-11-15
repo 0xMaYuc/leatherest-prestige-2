@@ -1,4 +1,4 @@
-
+<div class="ImageHero__ImageWrapper">
 <footer {% if section.settings.imagesupport %}style="background-image: url({{ section.settings.imagesupport | img_url: 'master' }});"{% endif %} id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="footer" class="Footer {% if section.blocks.size <= 2 %}Footer--center{% endif %}" role="contentinfo">
   <div class="Container">
     {%- if section.blocks.size > 0 -%}
@@ -139,8 +139,7 @@
         </div>
       {%- endif -%}
 
-
-      <div class="shopProperties Container">
+       <div class="shopProperties Container">
         <div class="shopProperties__Wrapper">
             <div class="shopProperty">
               <i class="fa-solid fa-truck-fast fa-2xl"></i>
@@ -170,7 +169,6 @@
         </div>
     </div>
 
-
       <div class="Footer__Copyright">
         <a href="{{ routes.root_url }}" class="Footer__StoreName Heading u-h7 Link Link--secondary">© {{ shop.name }}</a>
         <p class="Footer__ThemeAuthor">{{ powered_by_link }}</p>
@@ -192,14 +190,15 @@
     </div>
   </div>
 </footer>
-
-
+</div>
 
 {%- if settings.footer_background == settings.background -%}
   <style>
     .Footer {
       border-top: 1px solid var(--border-color);
     }
+
+
 
   </style>
 {%- endif -%}
@@ -243,30 +242,6 @@
       "id": "show_locale_selector",
       "label": "Show language selector",
       "default": true
-    }
-    {
-      "type": "text",
-      "id": "headline-1",
-      "label": "Überschrift #1",
-      "default": "Überschrift #1"
-    },
-    {
-      "type": "text",
-      "id": "headline-2",
-      "label": "Überschrift #2",
-      "default": "Überschrift #2"
-    },
-    {
-      "type": "text",
-      "id": "headline-3",
-      "label": "Überschrift #3",
-      "default": "Überschrift #3"
-    },
-    {
-      "type": "text",
-      "id": "headline-4",
-      "label": "Überschrift #4",
-      "default": "Überschrift #4"
     }
   ],
   "blocks": [
