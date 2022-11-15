@@ -107,6 +107,17 @@
         "headline-4": "25.354+ glückliche Kundinnen"
       }
     },
+    "686e4f5b-251d-4e93-bae3-557f630da38c": {
+      "type": "sk-customerCount",
+      "settings": {
+        "background": "#f4f4f5",
+        "imagesupport": "shopify:\/\/shop_images\/Bildschirmfoto_2021-04-22_um_22.57.08_56cc1802-9f3c-42c2-8dea-7a407e64ee30.png",
+        "textName": "Emma K.",
+        "textUnd": "und",
+        "textAnzahl": "25.500+ andere Personen",
+        "TextAbschluss": "lieben unsere Produkte"
+      }
+    },
     "e125b751-3486-428c-9a0b-b0a8e2acd6b8": {
       "type": "sk-triple-benefits",
       "settings": {
@@ -209,6 +220,7 @@
   "order": [
     "slideshow",
     "fdb7e9b9-74f4-4264-a835-230f14e6b1bf",
+    "686e4f5b-251d-4e93-bae3-557f630da38c",
     "e125b751-3486-428c-9a0b-b0a8e2acd6b8",
     "a6dff9d7-778b-4a7c-a84b-694096489c81",
     "0f34bd72-c497-489f-af4b-fadad8abef0e",
