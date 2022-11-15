@@ -1,0 +1,137 @@
+<div class="sk-collections-trust-badge">
+  <div class="Grid__Cell 2/2--phone 1/3--tablet-and-up 1/4--desk">
+    <div class="patternInterruptContainer">
+      <div class="patternInterrupt">
+        <div class="patternImage">
+          <img class="" src="{{ section.settings.imagesupport | img_url: 'master' }}" alt="{{ section.settings.imagesupport }}" width="20" height="20" />
+        </div>
+        <div class="SNO_378_content">
+            <h2>{{section.settings.headline}}</h2>   
+            <p>{{section.settings.text}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  @media screen and (min-width: 1041px) {
+    .sk-collections-trust-badge {
+      display:flex;
+      justify-content:center;
+    }
+  }
+  @media screen and (max-width: 641px) {
+    .shopify-section .Grid__Cell {
+      padding: 0 10px;
+    }
+  }
+
+
+  .patternInterruptContainer {
+    background: {{section.settings.background}};
+    border-radius:4px
+   }
+   .patternInterruptContainer .patternInterrupt {
+    padding:0 22px;
+    position:relative
+    aspect-ratio:1/1;
+    text-align:center;
+   }
+   .patternInterruptContainer .patternInterrupt .patternImage {
+    background:#6782a4;
+    border-radius:50%;
+    height:70px;
+    width:70px;
+    padding:7px 13px;
+    position:absolute;
+    left:39%;
+    top:-36px
+   }
+   .patternInterruptContainer .patternInterrupt .patternImage img {
+    /*height:55px;*/
+    margin-top:6px;
+    width:55px
+   }
+   .patternInterruptContainer .patternInterrupt .SNO_378_content {
+    padding-top:54px;
+    padding-bottom:2px
+   }
+   .patternInterruptContainer .patternInterrupt .SNO_378_content h2 {
+    font-size:20px;
+    text-transform:uppercase;
+    line-height:24px
+   }
+   .patternInterruptContainer .patternInterrupt .SNO_378_content p {
+    font-size:16px;
+    line-height:24px
+   }
+   @media(max-width:640px) {
+    .patternInterruptContainer .patternInterrupt {
+     aspect-ratio:auto;
+     padding:0 22px 26px;
+     margin-bottom:18px
+    }
+    .patternInterruptContainer .patternInterrupt .patternImage {
+     left:42%;
+     top:-18%
+    }
+   }
+   @media (min-width:1008px) and (max-width:1239px) {
+    .patternInterruptContainer .patternInterrupt .SNO_378_content {
+     padding-top:54px;
+     padding-bottom:2px;
+     flex-direction:column;
+     display:flex;
+     justify-content:center;
+     height:90%
+    }
+   }
+   @media(min-width:1400px) {
+    .patternInterruptContainer .patternInterrupt .SNO_378_content {
+     flex-direction:column;
+     display:flex;
+     justify-content:center;
+     padding-top:54px;
+     padding-bottom:2px;
+     height:90%
+    }
+   }
+   
+</style>
+
+{% schema %}
+{
+  "name": "custom_TrustBadges(Collection)",
+  "settings": [
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Hintergrund-Farbe",
+      "default": "#f4f4f5"
+    },
+	{
+      "type": "image_picker",
+      "id": "imagesupport",
+      "label": "Bild",
+      "info": "30 x 35px .jpg empfohlen"
+    },
+    {
+      "type": "text",
+      "id": "headline",
+      "label": "Überschrift",
+      "default": "Schneller, CO2 Neutraler Versand"
+    },
+    {
+        "type": "text",
+        "id": "text",
+        "label": "Text",
+        "default": "wir verschicken CO2 neutral"
+      }
+  ],
+  "presets": [{
+    "name": "custom_TrustBadges(Collection)",
+    "category": "Custom"
+  }]
+}
+{% endschema %}
