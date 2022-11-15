@@ -56,7 +56,8 @@
                     </div>
                   </div>
                 {%- else -%}
-                  <a href="{{ link.url }}" class="Collapsible__Button Heading Link Link--primary u-h6">{{ link.title | escape }}</a>
+                <i class="fa-solid fa-truck-fast"></i>
+                <a href="{{ link.url }}" class="Collapsible__Button Heading Link Link--primary u-h6">{{ link.title | escape }}</a>
                 {%- endif -%}
               </div>
             {%- endfor -%}
