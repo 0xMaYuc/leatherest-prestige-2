@@ -152,24 +152,24 @@
 
 <style>
   
-.sk_cart_shopProperties_Container {
-  background-color: #f4f4f5;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 8px 4px;
-  margin: 5px 20px;
-  border-radius: 4px;
-}
-.sk_cart_shopProperties_Container > i {
-  padding-right: 10px;
-  color: {{section.settings.iconColor}};
-}
-.sk_cart_shopProperties_Text {
-  color: #000;
-  font-size: 11px;
-  margin-right: 10px;
-}
+  .sk_cart_shopProperties_Container {
+    background-color: #f4f4f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 4px;
+    margin: 5px 20px;
+    border-radius: 4px;
+  }
+  .sk_cart_shopProperties_Container > i {
+    padding-right: 10px;
+    color: {{section.settings.iconColor}};
+  }
+  .sk_cart_shopProperties_Text {
+    color: #000;
+    font-size: 11px;
+    margin-right: 10px;
+  }
   .sk-navLinkBox--row {
     margin:4px -4px;
     display:flex;
@@ -208,6 +208,12 @@
   "name": "Sidebar menu",
   "settings": [
     {
+      "type": "color",
+      "id": "iconColor",
+      "label": "Icon-Farbe Trust Badges",
+      "default": "#bca170"
+    },
+    {
       "type": "link_list",
       "id": "primary_menu",
       "label": "Primary menu",
@@ -219,12 +225,7 @@
       "label": "Secondary menu",
       "info": "This menu won't show dropdown items."
     },
-    {
-      "type": "color",
-      "id": "iconColor",
-      "label": "Icon-Farbe",
-      "default": "#bca170"
-    },
+  
     {
       "type": "text",
       "id": "navLinkBox_Text1",
