@@ -1,4 +1,4 @@
-<footer {% if section.settings.background %}style="backgroundimage:{{ section.settings.imagesupport | img_url: 'master' }};"{% endif %} id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="footer" class="Footer {% if section.blocks.size <= 2 %}Footer--center{% endif %}" role="contentinfo">
+<footer {% if section.settings.background %}style="background-image: url({{ section.settings.imagesupport | img_url: 'master' }});"{% endif %} id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="footer" class="Footer {% if section.blocks.size <= 2 %}Footer--center{% endif %}" role="contentinfo">
   <div class="Container">
     {%- if section.blocks.size > 0 -%}
       <div class="Footer__Inner">
