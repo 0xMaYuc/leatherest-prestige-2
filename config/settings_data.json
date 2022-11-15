@@ -128,12 +128,13 @@
         "settings": {
           "imagesupport": "shopify:\/\/shop_images\/christopher-burns-NBr-AjfKVD4-unsplash_1_1500x_5884c212-b7bc-403d-a729-a5cfd01febf5.webp",
           "show_payment_methods": true,
-          "show_country_selector": true,
-          "show_locale_selector": true,
+          "show_country_selector": false,
+          "show_locale_selector": false,
           "headline-1": "Überschrift #1",
           "headline-2": "Überschrift #2",
           "headline-3": "Überschrift #3",
-          "headline-4": "Überschrift #4"
+          "headline-4": "Überschrift #4",
+          "background-footer-bottom": "#000"
         }
       },
       "popup": {
