@@ -1,0 +1,93 @@
+<div class="sk-customerCount" {% if section.settings.background %}style="background:{{ section.settings.background}};"{% endif %}>
+    <div class="sk-customerCount__image">
+        <img class="" src="{{ section.settings.imagesupport | img_url: 'master' }}" alt="{{ section.settings.imagesupport }}" width="20" height="20" />
+    </div>
+    <p class="sk-customerCount__text"><b>{{section.settings.textName}}</b> {{section.settings.textUnd}} <b>{{section.settings.textAnzahl}}</b> {{section.settings.TextAbschluss}}</p>
+</div>
+
+<style>
+    .sk-customerCount {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 0px;
+    }
+    
+    .sk-customerCount__image {
+        display: flex;
+        margin-right: 4px;
+    }
+    
+    .sk-customerCount__text {
+        width: fit-content;
+        color: #1d1d1f;
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 11px;
+        text-align: left;
+    }
+    
+    .sk-customerCount__image img {
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+    }
+    
+    .sk-customerCount__image img:nth-child(2) {
+        position: relative;
+        left: -5px;
+    }
+</style>
+
+{% schema %}
+{
+  "name": "custom_KundenanzahlBanner",
+  "settings": [
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Hintergrundfarbe",
+      "default": "#f4f4f5"
+    },
+	{
+      "type": "image_picker",
+      "id": "imagesupport",
+      "label": "Bild",
+      "info": "20 x 20px .jpg empfohlen"
+    },
+    {
+      "type": "text",
+      "id": "textName",
+      "label": "Name von Kunden",
+      "default": "Emma K."
+    },
+    {
+        "type": "text",
+        "id": "textUnd",
+        "label": "und",
+        "default": "und"
+      },
+	{
+      "type": "text",
+      "id": "textAnzahl",
+      "label": "Anzahl von Kunden",
+      "default": "25.500+ andere Personen"
+    },
+	{
+      "type": "text",
+      "id": "TextAbschluss",
+      "label": "Ende des Satzes",
+      "default": "lieben unsere Produkte"
+    }
+  ],
+  "presets": [{
+    "name": "custom_KundenanzahlBanner",
+    "category": "Custom"
+  }]
+}
+{% endschema %}
