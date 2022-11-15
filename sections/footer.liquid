@@ -208,6 +208,7 @@
 {%- if settings.footer_background == settings.background -%}
   <style>
     .Footer {
+      color: {{ section.settings.text-color}};
       border-top: 1px solid var(--border-color);
       position: relative;
     }
@@ -320,6 +321,12 @@
       "id": "background-footer-bottom",
       "label": "Hintergrund-Farbe Footer-Bottom",
       "default": "#000"
+    },
+    {
+      "type": "color",
+      "id": "text-color",
+      "label": "Text-Farbe Footer-Bottom",
+      "default": "#fff"
     }
   ],
   "blocks": [
