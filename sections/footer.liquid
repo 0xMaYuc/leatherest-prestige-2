@@ -139,6 +139,38 @@
         </div>
       {%- endif -%}
 
+
+      <div class="shopProperties Container">
+        <div class="shopProperties__Wrapper">
+            <div class="shopProperty">
+              <i class="fa-solid fa-truck-fast fa-2xl"></i>
+              <span>
+                <h4 class="Headline">{{ section.settings.headline-1 }}</h4>
+              </span>
+            </div>
+            <div class="shopProperty">
+              <i class="fa-solid fa-arrow-rotate-left fa-2xl"></i>
+              <span>
+                <h4 class="Headline">{{ section.settings.headline-2 }}</h4>
+              </span>
+            </div>
+            <div class="shopProperty">
+              <i class="fa-regular fa-circle-check fa-2xl"></i>
+              <span>
+                <h4 class="Headline">{{ section.settings.headline-3 }}</h4>
+              </span>
+            </div>
+            <div class="shopProperty">
+              <i class="fa-solid fa-thumbs-up fa-2xl"></i>
+              <span>
+                <h4 class="Headline">{{ section.settings.headline-4 }}</h4>
+              </span>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
       <div class="Footer__Copyright">
         <a href="{{ routes.root_url }}" class="Footer__StoreName Heading u-h7 Link Link--secondary">© {{ shop.name }}</a>
         <p class="Footer__ThemeAuthor">{{ powered_by_link }}</p>
@@ -166,9 +198,6 @@
   <style>
     .Footer {
       border-top: 1px solid var(--border-color);
-      mix-blend-mode: luminosity;
-      background: rgba(0, 0, 0, 0.58) 0% 0% no-repeat padding-box;
-      opacity: .5;
     }
 
   </style>
@@ -213,6 +242,30 @@
       "id": "show_locale_selector",
       "label": "Show language selector",
       "default": true
+    }
+    {
+      "type": "text",
+      "id": "headline-1",
+      "label": "Überschrift #1",
+      "default": "Überschrift #1"
+    },
+    {
+      "type": "text",
+      "id": "headline-2",
+      "label": "Überschrift #2",
+      "default": "Überschrift #2"
+    },
+    {
+      "type": "text",
+      "id": "headline-3",
+      "label": "Überschrift #3",
+      "default": "Überschrift #3"
+    },
+    {
+      "type": "text",
+      "id": "headline-4",
+      "label": "Überschrift #4",
+      "default": "Überschrift #4"
     }
   ],
   "blocks": [
