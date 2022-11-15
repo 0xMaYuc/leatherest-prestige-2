@@ -23,35 +23,37 @@
   }
 
 
-   .patternInterruptContainer {
+
+  .patternInterruptContainer {
     background: {{section.settings.background}};
     border-radius:4px
    }
    .patternInterruptContainer .patternInterrupt {
-    aspect-ratio:1/1;
-    text-align:center;
     padding:0 22px;
     position:relative
+    aspect-ratio:1/1;
+    text-align:center;
    }
    .patternInterruptContainer .patternInterrupt .patternImage {
-    position:absolute;
     background:#6782a4;
     border-radius:50%;
     height:70px;
     width:70px;
     padding:7px 13px;
+    position:absolute;
     left:39%;
     top:-36px
    }
-    .patternInterruptContainer .patternInterrupt .patternImage img {
-    height:55px;
+   .patternInterruptContainer .patternInterrupt .patternImage img {
+    /*height:55px;*/
+    margin-top:6px;
     width:55px
    }
    .patternInterruptContainer .patternInterrupt .SNO_378_content {
     padding-top:54px;
     padding-bottom:2px
    }
-  .patternInterruptContainer .patternInterrupt .SNO_378_content h2 {
+   .patternInterruptContainer .patternInterrupt .SNO_378_content h2 {
     font-size:20px;
     text-transform:uppercase;
     line-height:24px
@@ -72,25 +74,26 @@
     }
    }
    @media (min-width:1008px) and (max-width:1239px) {
-   .patternInterruptContainer .patternInterrupt .SNO_378_content {
-     flex-direction:column;
-     display:flex;
+    .patternInterruptContainer .patternInterrupt .SNO_378_content {
      padding-top:54px;
      padding-bottom:2px;
+     flex-direction:column;
+     display:flex;
      justify-content:center;
      height:90%
     }
    }
    @media(min-width:1400px) {
-   .patternInterruptContainer .patternInterrupt .SNO_378_content {
+    .patternInterruptContainer .patternInterrupt .SNO_378_content {
      flex-direction:column;
      display:flex;
+     justify-content:center;
      padding-top:54px;
      padding-bottom:2px;
-     justify-content:center;
      height:90%
     }
    }
+   
    
    
 </style>
