@@ -56,8 +56,10 @@
                     </div>
                   </div>
                 {%- else -%}
-                <i class="fa-solid fa-truck-fast"></i>
-                <a href="{{ link.url }}" class="Collapsible__Button Heading Link Link--primary u-h6">{{ link.title | escape }}</a>
+                  <a href="{{ link.url }}" class="Collapsible__Button Heading Link Link--primary u-h6">
+                    <i class="custom-nav-icon fa-solid fa-truck-fast"></i>
+                    {{ link.title | escape }}
+                  </a>
                 {%- endif -%}
               </div>
             {%- endfor -%}
@@ -156,6 +158,11 @@
 </section>
 
 <style>
+
+  custom-nav-icon {
+    margin-right: 5px;
+    color: {{section.settings.iconColor}};
+  }
   
   .sk_cart_shopProperties_Container {
     background-color: #f4f4f5;
