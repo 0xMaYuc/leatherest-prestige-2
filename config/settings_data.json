@@ -124,6 +124,7 @@
           "footer-2"
         ],
         "settings": {
+          "imagesupport": "shopify:\/\/shop_images\/christopher-burns-NBr-AjfKVD4-unsplash_1_1500x_5884c212-b7bc-403d-a729-a5cfd01febf5.webp",
           "show_payment_methods": true,
           "show_country_selector": true,
           "show_locale_selector": true
