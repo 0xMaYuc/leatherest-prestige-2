@@ -208,12 +208,8 @@
 {%- if settings.footer_background == settings.background -%}
   <style>
     .Footer {
-      color: {{ section.settings.text-color}};
       border-top: 1px solid var(--border-color);
       position: relative;
-    }
-    .Footer__Reviews > span {
-      color: {{ section.settings.text-color}};
     }
     .Footer:before {
       content: ' ';
@@ -232,6 +228,7 @@
     }
     .Footer-bottom {
       background: {{ section.settings.background-footer-bottom}};
+      color: {{ section.settings.text-color}};
       height: 150px;
       display: flex;
       justify-content: center;
