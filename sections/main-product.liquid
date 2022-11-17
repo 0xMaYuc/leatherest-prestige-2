@@ -433,11 +433,12 @@
         </div>
 
         {% if template contains 'product' %}
+          <!-- Sticky Cart -->
           <div id="sticky-atc" class="sticky-atc sticky-atc--hidden">
             <form action="/cart/add" method="post">
               <div class="quantityAtcRow">
                 <div class="sticky-atc-left">
-{% comment %}
+                  {% comment %}
                   <div class="QuantitySelector QuantitySelector--large">
                     {%- assign quantity_minus_one = line_item.quantity | minus: 1 -%}
 
@@ -447,13 +448,13 @@
                   </div>
 
 
-OLD VERSION WITH VARIANT SELECTOR     
+                    OLD VERSION WITH VARIANT SELECTOR     
                       <select class="Button" name="id">
                         {% for variant in product.variants %}
                           <option value="{{variant.id}}">{{variant.title}}</option>
                         {% endfor %}
                       </select>
-{% endcomment %}
+                  {% endcomment %}
 
                   {%- if settings.currency_code_enabled -%}
                     {%- if product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price -%}
@@ -471,10 +472,6 @@ OLD VERSION WITH VARIANT SELECTOR
                     {%- endif -%}
                   {%- endif -%}
 
-{% comment %}
-OLD VERSION ONLY WITH PRICE
-                  <span class="ProductMeta__Price Price Price--highlight Text--subdued u-h4">{{ product.selected_or_first_available_variant.price | money_without_trailing_zeros }}</span>
-{% endcomment %}
                 </div>
                 <button type="submit" class="ProductForm__AddToCart Button Button--secondary Button--full" data-action="add-to-cart"><span>In den Warenkorb</span></button>
               </div>
@@ -627,7 +624,7 @@ OLD VERSION ONLY WITH PRICE
             }
           </style>
         {% endif %}
-        
+
       </div>
     </div>
 
