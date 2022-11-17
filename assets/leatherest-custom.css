@@ -81,3 +81,6 @@ ul.SK_Payment_Methods {
 .ColorSwatch--large {
   border-radius: 25px;
 }
+.ProductForm__AddToCart .Button {
+  background: var(--button-background);
+}
