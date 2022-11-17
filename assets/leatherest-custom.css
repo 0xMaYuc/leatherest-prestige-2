@@ -69,3 +69,11 @@ ul.SK_Payment_Methods {
   color: #008000;
   margin-left: 25px;
 }
+
+.ProductForm__QuantitySelector {
+  display: flex;
+}
+.sk-cart-button {
+  margin-left: 10px;
+  width: 100%;
+}
