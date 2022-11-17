@@ -373,17 +373,7 @@
         }
       });
   
-      $(".sliderTriple").on('afterChange', (slick, currentSlide) => {
-        if(window.matchMedia("(max-width: 768px)")){
-          removeAllOthers();
-          imageItems[currentSlide.currentSlide].classList.toggle("TripleBenefits__reel-img--active");
-          removeAllOtherDetails();
-          infoItems[currentSlide.currentSlide].classList.toggle("TripleBenefits__details-info--active");
-        }
-        console.log("currentbr", currentSlide.currentBreakpoint)
-        console.log("currentSLide", currentSlide.currentSlide)
-      });
-  
+    
       $(window).on('resize', function(){
         if($(window).width() < 768){
           reInitSlider();
