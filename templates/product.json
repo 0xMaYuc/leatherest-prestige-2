@@ -15,9 +15,9 @@
         "variant_selector": {
           "type": "variant_selector",
           "settings": {
-            "selector_mode": "dropdown",
-            "show_color_swatch": false,
-            "show_color_carousel": false,
+            "selector_mode": "block",
+            "show_color_swatch": true,
+            "show_color_carousel": true,
             "size_chart": ""
           }
         },
@@ -31,7 +31,7 @@
           "type": "buy_buttons",
           "settings": {
             "show_price_in_button": false,
-            "show_payment_button": false
+            "show_payment_button": true
           }
         },
         "description": {
