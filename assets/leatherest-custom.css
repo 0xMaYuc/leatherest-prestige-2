@@ -13,6 +13,7 @@ ul.SK_Payment_Methods {
   height: auto;
 }
 
+/* CART */
 .da_cart__kundenzahl {
   height: 35px;
   display: flex;
@@ -38,4 +39,19 @@ ul.SK_Payment_Methods {
   font-weight: 600;
   color: #007600;
   margin-right: 8px;
+}
+.Drawer__Footer .da_cart__shippingcosts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.da_cart__shippingcosts .Cart__Taxes {
+  margin-bottom: 0px;
+}
+.da_payment_icons {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 -8px;
+  padding-top: 12px;
+  margin-bottom: -12px;
 }

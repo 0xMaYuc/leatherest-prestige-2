@@ -34,13 +34,10 @@
       {%- endif -%}
 
       <div class="da_cart__kundenzahl">
-        Über 25.354+ glückliche KundInnen 
         {{ settings.da_cart_kunden }}
     </div>
 
     <div class="da_trustbadge">
-        <b>Gute Wahl!</b>
-        Hier sind deine Produkte: 
         <b>{{ settings.da_cart_trustbadge_text_left }}</b>{{ settings.da_cart_trustbadge_text_right }}
     </div>
 
@@ -71,8 +68,8 @@
           {%- endif -%}
 
         	<span class="da_cart__shippingcosts">
-              <p class="Cart__Taxes Text--subdued">Versandkosten</p>
-              <b class="Cart__Taxes Text--subdued" style="color: #008b10">Kostenlos</b>
+            <p class="Cart__Taxes Text--subdued">{{ settings.da_cart_shipping_left }}</p>
+            <b class="Cart__Taxes Text--subdued" style="color: #008b10">{{ settings.da_cart_shipping_right }}</b>
             </span>
 
           

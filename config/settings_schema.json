@@ -474,12 +474,42 @@
           }
         ],
         "default": "drawer"
-      },
+      },      
       {
         "type": "checkbox",
         "id": "cart_enable_notes",
         "label": "Enable order notes",
         "default": true
+      },
+      {
+        "type": "text",
+        "id": "da_cart_kunden",
+        "label": "DA - Kunden",
+        "default": "Hier Text eingeben"
+      },
+      {
+        "type": "text",
+        "id": "da_cart_trustbadge_text_right",
+        "label": "DA - Trustbadge - Right",
+        "default": "Hier Text eingeben"
+      },
+      {
+        "type": "text",
+        "id": "da_cart_trustbadge_text_left",
+        "label": "DA - Trustbadge - Left",
+        "default": "Hier Text eingeben"
+      },
+      {
+        "type": "text",
+        "id": "da_cart_shipping_left",
+        "label": "DA - Versandkosten - Links",
+        "default": "Versandkosten"
+      },
+      {
+        "type": "text",
+        "id": "da_cart_shipping_right",
+        "label": "DA - Versandkosten - Rechts",
+        "default": "Kostenlos"
       },
       {
         "type": "checkbox",
