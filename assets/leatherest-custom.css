@@ -55,3 +55,10 @@ ul.SK_Payment_Methods {
   padding-top: 12px;
   margin-bottom: -12px;
 }
+.Drawer__Footer .da_payment_icons {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 -8px;
+  padding-top: 12px;
+  margin-bottom: -12px;
+}
