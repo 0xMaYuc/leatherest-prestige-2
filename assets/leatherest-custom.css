@@ -77,3 +77,7 @@ ul.SK_Payment_Methods {
   margin-left: 10px;
   width: 100%;
 }
+
+.ColorSwatch--large {
+  border-radius: 25px;
+}
