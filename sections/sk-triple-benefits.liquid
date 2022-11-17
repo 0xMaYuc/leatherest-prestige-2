@@ -152,11 +152,11 @@
     position: relative;
     transition: all 0.2s 0s ease-in-out;
   }
-  @media screen and (max-width: 741px) {
+  @media screen and (max-width: 641px) {
     .TripleBenefits__reel-img {
       padding: 0px 5px;
     }
-  }
+  
 
   .TripleBenefits__badge {
     position: absolute;
@@ -388,9 +388,9 @@
         if($(window).width() < 768){
           reInitSlider();
           removeAllOthers();
-          imageItems[1].classList.toggle("TripleBenefits__reel-img--active");
+          imageItems[0].classList.toggle("TripleBenefits__reel-img--active");
           removeAllOtherDetails();
-          infoItems[1].classList.toggle("TripleBenefits__details-info--active");
+          infoItems[0].classList.toggle("TripleBenefits__details-info--active");
         }else if($(window).width() < 1024) {
           reInitSlider();
           removeAllOthers();
