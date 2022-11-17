@@ -17,7 +17,7 @@
           "settings": {
             "selector_mode": "dropdown",
             "show_color_swatch": false,
-            "show_color_carousel": false,
+            "show_color_carousel": true,
             "size_chart": ""
           }
         },
