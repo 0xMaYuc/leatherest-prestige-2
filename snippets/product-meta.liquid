@@ -38,7 +38,7 @@
           <span class="ProductMeta__Price Price Price--highlight Text--subdued u-h4">{{ product.selected_or_first_available_variant.price | money_with_currency }}</span>
           <span class="ProductMeta__Price Price Price--compareAt Text--subdued u-h4">{{ product.selected_or_first_available_variant.compare_at_price | money_with_currency }}</span>
           {%- if product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price -%}
-            <div class="ProductMeta__Price Price Price--totalSaving Text--subdued u-h5">Du sparst {{ product.selected_or_first_available_variant.compare_at_price | minus: product.selected_or_first_available_variant.price | money_without_trailing_zeros }}</div>
+            <div class="ProductMeta__Price Price Price--totalSaving Text--subdued u-h5" style="color:#008000; margin-left: 25px;">Du sparst {{ product.selected_or_first_available_variant.compare_at_price | minus: product.selected_or_first_available_variant.price | money_without_trailing_zeros }}</div>
           {%- endif -%}
         
         {%- else -%}
@@ -49,7 +49,7 @@
           <span class="ProductMeta__Price Price Price--highlight Text--subdued u-h4">{{ product.selected_or_first_available_variant.price | money }}</span>
           <span class="ProductMeta__Price Price Price--compareAt Text--subdued u-h4">{{ product.selected_or_first_available_variant.compare_at_price | money }}</span>
           {%- if product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price -%}
-            <div class="ProductMeta__Price Price Price--totalSaving Text--subdued u-h5">Du sparst {{ product.selected_or_first_available_variant.compare_at_price | minus: product.selected_or_first_available_variant.price | money_without_trailing_zeros }}</div>
+            <div class="ProductMeta__Price Price Price--totalSaving Text--subdued u-h5" style="color:#008000; margin-left: 25px;">Du sparst {{ product.selected_or_first_available_variant.compare_at_price | minus: product.selected_or_first_available_variant.price | money_without_trailing_zeros }}</div>
           {%- endif -%}
         
         {%- else -%}
