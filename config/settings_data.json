@@ -26,7 +26,7 @@
     "uppercase_heading": true,
     "text_font": "futura_n4",
     "base_text_font_size": 14,
-    "color_swatch_config": "echtleder braun:#8d5624\nechtleder schwarz:#000000\ncarbon:carbon.png",
+    "color_swatch_config": "echtleder braun:#8d5624\nechtleder schwarz:#000000\ncarbon:carbon.png\nbeige:#d4d1c1",
     "show_page_transition": false,
     "search_mode": "product,article",
     "product_show_price_on_hover": false,
