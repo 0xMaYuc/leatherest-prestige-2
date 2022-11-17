@@ -39,7 +39,7 @@
     </div>
 
     <div class="da_trustbadge">
-        Gute Wahl!
+        <b>Gute Wahl!</b>
         Hier sind deine Produkte: 
         <b>{{ settings.da_cart_trustbadge_text_left }}</b>{{ settings.da_cart_trustbadge_text_right }}
     </div>
@@ -58,7 +58,9 @@
 
     {%- unless cart.item_count == 0 -%}
       <div class="Drawer__Footer" data-drawer-animated-bottom>
-        {%- capture shipping_and_taxes_notice -%}{{ 'cart.general.shipping_and_taxes_notice' | t }}{%- endcapture -%}
+        {% comment %}
+           {%- capture shipping_and_taxes_notice -%}{{ 'cart.general.shipping_and_taxes_notice' | t }}{%- endcapture -%}
+        {% endcomment %}
 
         {%- if settings.cart_enable_notes or shipping_and_taxes_notice != blank -%}
           {%- if settings.cart_enable_notes -%}
@@ -70,9 +72,20 @@
           {%- endif -%}
 
           {%- if shipping_and_taxes_notice != blank -%}
-            <p class="Cart__Taxes Text--subdued">{{ shipping_and_taxes_notice }}</p>
+            <!--<p class="Cart__Taxes Text--subdued">{{ shipping_and_taxes_notice }}</p>-->
+        	<span class="da_cart__shippingcosts">
+              
+              <p class="Cart__Taxes Text--subdued">Versandkosten</p>
+              <b class="Cart__Taxes Text--subdued" style="color: #008b10">Kostenlos</b>
+            </span>
           {%- endif -%}
-
+          
+          {% comment %}
+            {%- if shipping_and_taxes_notice != blank -%}
+              <p class="Cart__Taxes Text--subdued">{{ shipping_and_taxes_notice }}</p>
+            {%- endif -%}
+          {% endcomment %}
+          
           {%- if cart.cart_level_discount_applications != blank -%}
             {%- for discount_application in cart.cart_level_discount_applications -%}
               <p class="Cart__Discount">{%- render 'icon' with 'sale' -%} {{ 'cart.general.discount' | t }} ({{ discount_application.title }}): -<span>{{ discount_application.total_allocated_amount | money }}</span></p>
