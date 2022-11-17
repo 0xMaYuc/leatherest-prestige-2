@@ -33,6 +33,17 @@
         </div>
       {%- endif -%}
 
+      <div class="da_cart__kundenzahl">
+        Über 25.354+ glückliche KundInnen 
+        {{ settings.da_cart_kunden }}
+    </div>
+
+    <div class="da_trustbadge">
+        Gute Wahl!
+        Hier sind deine Produkte: 
+        <b>{{ settings.da_cart_trustbadge_text_left }}</b>{{ settings.da_cart_trustbadge_text_right }}
+    </div>
+
       {%- if cart.item_count == 0 -%}
         <p class="Cart__Empty Heading u-h5">{{ 'cart.general.empty' | t }}</p>
       {%- else -%}
