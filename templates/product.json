@@ -73,11 +73,18 @@
         "show_vendor": false,
         "show_color_swatch": false
       }
+    },
+    "1668692643df9a0ad0": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
     "main",
     "product-recommendations",
-    "recently-viewed-products"
+    "recently-viewed-products",
+    "1668692643df9a0ad0"
   ]
 }
