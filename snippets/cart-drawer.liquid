@@ -58,9 +58,8 @@
 
     {%- unless cart.item_count == 0 -%}
       <div class="Drawer__Footer" data-drawer-animated-bottom>
-        {% comment %}
-           {%- capture shipping_and_taxes_notice -%}{{ 'cart.general.shipping_and_taxes_notice' | t }}{%- endcapture -%}
-        {% endcomment %}
+        
+        {%- capture shipping_and_taxes_notice -%}{{ 'cart.general.shipping_and_taxes_notice' | t }}{%- endcapture -%}
 
         {%- if settings.cart_enable_notes or shipping_and_taxes_notice != blank -%}
           {%- if settings.cart_enable_notes -%}
@@ -71,14 +70,11 @@
             {%- endif -%}
           {%- endif -%}
 
-          {%- if shipping_and_taxes_notice != blank -%}
-            <!--<p class="Cart__Taxes Text--subdued">{{ shipping_and_taxes_notice }}</p>-->
         	<span class="da_cart__shippingcosts">
-              
               <p class="Cart__Taxes Text--subdued">Versandkosten</p>
               <b class="Cart__Taxes Text--subdued" style="color: #008b10">Kostenlos</b>
             </span>
-          {%- endif -%}
+
           
           {% comment %}
             {%- if shipping_and_taxes_notice != blank -%}
