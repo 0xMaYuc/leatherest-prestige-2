@@ -116,6 +116,13 @@ for size, we use it to display a size chart (if applicable)
 
                 <div class="VariantSelector__Carousel Carousel" data-flickity-config='{{ flickity_options }}'>
                   {%- for value in option.values -%}
+                    {%- for variant in product.variants -%}
+                      {%- if variant[option_index] == value -%}
+                        {%- assign variant_image = variant.image | default: product.featured_image -%}
+                        {%- break -%}
+                      {%- endif -%}
+                    {%- endfor -%}
+
                     <div class="VariantSelector__Item Carousel__Cell {% if value == option.selected_value %}is-selected{% endif %}"
                          data-background-color="{{ value | split: ' ' | last | handle }}"
                          data-background-image="{{ value | handle | append: '.png' | asset_url }}"
