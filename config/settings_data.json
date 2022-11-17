@@ -26,6 +26,7 @@
     "uppercase_heading": true,
     "text_font": "futura_n4",
     "base_text_font_size": 14,
+    "color_swatch_config": "echtleder braun:#8d5624",
     "show_page_transition": false,
     "search_mode": "product,article",
     "product_show_price_on_hover": false,
@@ -135,7 +136,7 @@
           "headline-3": "Überschrift #3",
           "headline-4": "Überschrift #4",
           "background-footer-bottom": "#000000",
-          "text-color": "#fff"
+          "text-color": "#ffffff"
         }
       },
       "popup": {
