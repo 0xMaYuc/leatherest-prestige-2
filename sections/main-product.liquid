@@ -99,11 +99,14 @@
 
                 {{media.alt}}
                 <script>
-                  console.log("TEST");
-                var a = {{media.alt}};
-                console.log("a: " + a);
-                var b = a.split(/[-]/);
-                console.log(b);
+                  document.addEventListener("DOMContentLoaded", function(){
+                  
+                    console.log("TEST");
+                    var a = {{media.alt}};
+                    console.log("a: " + a);
+                    var b = a.split(/[-]/);
+                    console.log(b);
+                });
               </script>
 
                 <noscript>
