@@ -97,6 +97,10 @@
                 <img class="Image--lazyLoad Image--fadeIn" data-src="{{ image_url }}" data-widths="[{{ supported_sizes }}]" data-sizes="auto" data-expand="-100" alt="{{ media.alt | escape }}" data-max-width="{{ media.width }}" data-max-height="{{ media.height }}" data-original-src="{{ media | img_url: 'master' }}">
                 <span class="Image__Loader"></span>
                 
+                <script type="text/javascript">
+                console.log ({{media.alt}});
+
+              </script>
                 {%- comment -%} SK - Information aus Alt-Text auslesen und darstellen   {%- endcomment -%}
                 {%-  if product.title != media.alt -%}
 
