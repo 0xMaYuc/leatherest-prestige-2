@@ -101,9 +101,10 @@
                 {%-  if product.title != media.alt -%}
 
                   <script type="text/javascript">
-                    let a = '{{media.alt}}';
-                    let substrings = a.split(' - ');
-                    console.log("b: " + substrings[0]);
+                    let str = '{{media.alt}}';
+                    let substrings = str.split(' - ');
+                    console.log("1: " + substrings[0]);
+                    console.log("b: " + substrings[1]);
               
               </script>
 
@@ -121,7 +122,7 @@
                     </button>
 
                     <div class="product-slideshow__tooltip">
-                      <p>Erfreue dich an einer glatten und geschmeidigen Haut, ganz ohne Stoppeln.</p>
+                      <p><script type="text/javascript">document. write(substrings[1]);</script></p>
                     </div>
                   </div>
 
