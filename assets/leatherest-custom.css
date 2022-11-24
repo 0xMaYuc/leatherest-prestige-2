@@ -204,6 +204,7 @@ ul.SK_Payment_Methods {
   line-height: 1.618em;
 }
 
+/*
 @media only screen and (min-width: 768px) {
   .wrappContent {
     display: none;
@@ -213,3 +214,4 @@ ul.SK_Payment_Methods {
     display: none;
   }
 }
+*/
