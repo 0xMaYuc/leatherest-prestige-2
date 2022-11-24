@@ -103,34 +103,28 @@
                   <script type="text/javascript">
                     let str = '{{media.alt}}';
                     let substrings = str.split(' - ');
+                    console.log (substrings);
 
                     function showtext() {
-
                       $(".product-slideshow__details").toggleClass("tooltip-active");
-
                     }
-
                   </script>
 
                   <div class="product-slideshow__details">
                     <span class="product-slideshow__title"><script type="text/javascript">document. write(substrings[0]);</script></span>
                     <button onclick="showtext()" class="product-slideshow__action" tabindex="0">
-                      
                       <span class="info-icon-link">Mehr Infos</span>
                       <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="Icon Icon--info-temp">
                         <circle cx="10" cy="10" r="10" fill="#1A1423"></circle>
                         <path d="M11 5H9V7H11V5Z" fill="white"></path>
                         <path d="M11 9H9V15H11V9Z" fill="white"></path>
-                      </svg>
-                                        
+                      </svg>            
                     </button>
 
                     <div class="product-slideshow__tooltip">
                       <p><script type="text/javascript">document. write(substrings[1]);</script></p>
                     </div>
                   </div>
-
-                 
                 {%- endif -%}
 
                 <noscript>
