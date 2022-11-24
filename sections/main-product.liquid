@@ -99,13 +99,12 @@
                 
                 {%- comment -%} SK - Information aus Alt-Text auslesen und darstellen   {%- endcomment -%}
                 {%-  if product.title != media.alt -%}
-                    {{media.alt}}
+                   
                     <script type="text/javascript">
-                      
                         let a = '{{media.alt}}';
-                        console.log("a: " + a);
                         let substrings = a.split(' - ');
                         console.log("b: " + substrings[0]);
+                        document. write(substrings[0]);
 
                   </script>
                 {%- endif -%}
