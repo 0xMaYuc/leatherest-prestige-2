@@ -98,6 +98,12 @@
                 <span class="Image__Loader"></span>
 
                 {{media.alt}}
+                <script>
+                var a = {{media.alt}};
+                console.log(a);
+                var b = a.split(" - ");
+                console.log(b);
+              </script>
 
                 <noscript>
                   <img src="{{ media | img_url: '800x' }}" alt="{{ media.alt | escape }}">
