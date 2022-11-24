@@ -103,11 +103,18 @@
                   <script type="text/javascript">
                     let str = '{{media.alt}}';
                     let substrings = str.split(' - ');
+
+                    function showtext() {
+
+                      $(".product-slideshow__details").toggleClass("tooltip-active");
+
+                    }
+
                   </script>
 
                   <div class="product-slideshow__details">
                     <span class="product-slideshow__title"><script type="text/javascript">document. write(substrings[0]);</script></span>
-                    <button class="product-slideshow__action" tabindex="0">
+                    <button onclick="showtext()" class="product-slideshow__action" tabindex="0">
                       
                       <span class="info-icon-link">Mehr Infos</span>
                       <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="Icon Icon--info-temp">
