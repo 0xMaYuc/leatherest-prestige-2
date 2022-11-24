@@ -101,13 +101,13 @@
                 {%-  if product.title != media.alt -%}
 
                   <script type="text/javascript">
-                    let str = '{{media.alt}}';
-                    let substrings = str.split(' - ');
+                    var str = '{{media.alt}}';
+                    var substrings = str.split(' - ');
                     console.log (substrings);
 
                     function reRenderString() {
-                      let str2 = '{{media.alt}}';
-                      let substrings2 = str2.split(' - ');
+                      var str2 = '{{media.alt}}';
+                      var substrings2 = str2.split(' - ');
                       console.log ("substrings2" + substrings2);
                     }
                     function showtext() {
