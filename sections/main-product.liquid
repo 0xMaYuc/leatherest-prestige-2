@@ -106,8 +106,9 @@
 
                     function showtext() {
 
-                      $(".product-slideshow__details").toggleClass("tooltip-active");
-
+                     
+                      var element = document.getElementByClassName("product-slideshow__details");
+                      element.classList.add("tooltip-active");
                     }
 
                   </script>
