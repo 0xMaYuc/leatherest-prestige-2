@@ -105,10 +105,16 @@
                     let substrings = str.split(' - ');
                     console.log (substrings);
 
+                    function reRenderString() {
+                      let str2 = '{{media.alt}}';
+                      let substrings2 = str2.split(' - ');
+                      console.log ("substrings2" + substrings2);
+                    }
                     function showtext() {
                       $(".product-slideshow__details").toggleClass("tooltip-active");
                     }
                   </script>
+                 
 
                   <div class="product-slideshow__details">
                     <span class="product-slideshow__title"><script type="text/javascript">document. write(substrings[0]);</script></span>
@@ -256,7 +262,7 @@
           {%- endcomment -%}
 
           <div class="Product__SlideshowMobileNav {% if section.settings.stack_images or section.settings.show_thumbnails %}hidden-lap-and-up{% endif %}">
-            <button class="Product__SlideshowNavArrow Product__SlideshowNavArrow--previous" type="button" data-direction="previous" aria-label="{{ 'general.accessibility.previous' | t }}">
+            <button  onclick="reRenderString()" class="Product__SlideshowNavArrow Product__SlideshowNavArrow--previous" type="button" data-direction="previous" aria-label="{{ 'general.accessibility.previous' | t }}">
               {% render 'icon' with 'media-arrow-left' %}
             </button>
 
