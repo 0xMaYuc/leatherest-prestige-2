@@ -1,5 +1,21 @@
 
 <footer id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="footer" class="Footer {% if section.blocks.size <= 2 %}Footer--center{% endif %}" role="contentinfo">
+  
+    <div class=" Footer__Background-Image ">
+      
+        <div class="ImageHero__ImageWrapper">
+          <div class="ImageHero__Image Image--lazyLoaded" data-optimumx="1.4" data-expand="-150" data-bgset="//cdn.shopify.com/s/files/1/0412/1591/8230/files/christopher-burns-NBr-AjfKVD4-unsplash_1_1000x_crop_center.jpg?v=1615570458 750w, //cdn.shopify.com/s/files/1/0412/1591/8230/files/christopher-burns-NBr-AjfKVD4-unsplash_1_1000x.jpg?v=1615570458 1000w, //cdn.shopify.com/s/files/1/0412/1591/8230/files/christopher-burns-NBr-AjfKVD4-unsplash_1_1500x.jpg?v=1615570458 1500w" style="background-image: url(&quot;https://cdn.shopify.com/s/files/1/0412/1591/8230/files/christopher-burns-NBr-AjfKVD4-unsplash_1_1500x.jpg?v=1615570458&quot;);">
+          <picture style="display: none;">
+            <source data-srcset="//cdn.shopify.com/s/files/1/0412/1591/8230/files/christopher-burns-NBr-AjfKVD4-unsplash_1_1500x.jpg?v=1615570458"><img alt="" class="lazyautosizes Image--lazyLoaded" data-sizes="auto" data-optimumx="1.4" data-parent-fit="cover" data-srcset="" sizes="1265px">
+          </picture>
+          </div>
+          <noscript>
+            <div class="ImageHero__Image" style="background-image: url(//cdn.shopify.com/s/files/1/0412/1591/8230/files/christopher-burns-NBr-AjfKVD4-unsplash_1_1500x.jpg?v=1615570458)"></div>
+          </noscript>
+        </div>
+      
+
+
   <div class="Container">
     {%- if section.blocks.size > 0 -%}
       <div class="Footer__Inner">
@@ -65,40 +81,44 @@
         {%- endfor -%}
       </div>
     {%- endif -%}
-
-    <div class="Footer__Aside">
-      <div class="shopProperties Container">
-        <div class="shopProperties__Wrapper">
-            <div class="shopProperty">
-              <i class="fa-solid fa-truck-fast fa-2xl"></i>
-              <span>
-                <h4 class="Headline">{{ section.settings.headline-1 }}</h4>
-              </span>
-            </div>
-            <div class="shopProperty">
-              <i class="fa-solid fa-arrow-rotate-left fa-2xl"></i>
-              <span>
-                <h4 class="Headline">{{ section.settings.headline-2 }}</h4>
-              </span>
-            </div>
-            <div class="shopProperty">
-              <i class="fa-regular fa-circle-check fa-2xl"></i>
-              <span>
-                <h4 class="Headline">{{ section.settings.headline-3 }}</h4>
-              </span>
-            </div>
-            <div class="shopProperty">
-              <i class="fa-solid fa-thumbs-up fa-2xl"></i>
-              <span>
-                <h4 class="Headline">{{ section.settings.headline-4 }}</h4>
-              </span>
+    <div class="Container">
+      <div class="Footer__Aside">
+        <div class="shopProperties Container">
+          <div class="shopProperties__Wrapper">
+              <div class="shopProperty">
+                <i class="fa-solid fa-truck-fast fa-2xl"></i>
+                <span>
+                  <h4 class="Headline">{{ section.settings.headline-1 }}</h4>
+                </span>
+              </div>
+              <div class="shopProperty">
+                <i class="fa-solid fa-arrow-rotate-left fa-2xl"></i>
+                <span>
+                  <h4 class="Headline">{{ section.settings.headline-2 }}</h4>
+                </span>
+              </div>
+              <div class="shopProperty">
+                <i class="fa-regular fa-circle-check fa-2xl"></i>
+                <span>
+                  <h4 class="Headline">{{ section.settings.headline-3 }}</h4>
+                </span>
+              </div>
+              <div class="shopProperty">
+                <i class="fa-solid fa-thumbs-up fa-2xl"></i>
+                <span>
+                  <h4 class="Headline">{{ section.settings.headline-4 }}</h4>
+                </span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
     
+    
   </div>
+
+</div>
 </footer>
 
 <section class="Footer-bottom">
@@ -179,9 +199,8 @@
     <div class="Footer__Copyright">
       {%- if section.settings.show_payment_methods -%}
         {%- capture payment_methods -%}
-          {%- for type in shop.enabled_payment_types -%}
-            <!-- <li class="HorizontalList__Item">{{ type | payment_type_svg_tag }}</li>-->
-
+         
+          
               <li class="HorizontalList__Item">
                 <svg viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" width="38" height="24" role="img" aria-labelledby="pi-paypal"><title id="pi-paypal">PayPal</title><path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"></path><path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"></path><path fill="#003087" d="M23.9 8.3c.2-1 0-1.7-.6-2.3-.6-.7-1.7-1-3.1-1h-4.1c-.3 0-.5.2-.6.5L14 15.6c0 .2.1.4.3.4H17l.4-3.4 1.8-2.2 4.7-2.1z"></path><path fill="#3086C8" d="M23.9 8.3l-.2.2c-.5 2.8-2.2 3.8-4.6 3.8H18c-.3 0-.5.2-.6.5l-.6 3.9-.2 1c0 .2.1.4.3.4H19c.3 0 .5-.2.5-.4v-.1l.4-2.4v-.1c0-.2.3-.4.5-.4h.3c2.1 0 3.7-.8 4.1-3.2.2-1 .1-1.8-.4-2.4-.1-.5-.3-.7-.5-.8z"></path><path fill="#012169" d="M23.3 8.1c-.1-.1-.2-.1-.3-.1-.1 0-.2 0-.3-.1-.3-.1-.7-.1-1.1-.1h-3c-.1 0-.2 0-.2.1-.2.1-.3.2-.3.4l-.7 4.4v.1c0-.3.3-.5.6-.5h1.3c2.5 0 4.1-1 4.6-3.8v-.2c-.1-.1-.3-.2-.5-.2h-.1z"></path></svg>
               </li>
@@ -198,7 +217,7 @@
                 <svg viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" role="img" width="38" height="24" aria-labelledby="pi-master"><title id="pi-master">Mastercard</title><path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"></path><path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"></path><circle fill="#EB001B" cx="15" cy="12" r="7"></circle><circle fill="#F79E1B" cx="23" cy="12" r="7"></circle><path fill="#FF5F00" d="M22 12c0-2.4-1.2-4.5-3-5.7-1.8 1.3-3 3.4-3 5.7s1.2 4.5 3 5.7c1.8-1.2 3-3.3 3-5.7z"></path></svg>
               </li>
 
-          {%- endfor -%}
+
         {%- endcapture -%}
   
         {%- if payment_methods != blank -%}
@@ -230,44 +249,276 @@
       border-top: 1px solid var(--border-color);
       position: relative;
     }
-    .Footer::before {
-      content: ' ';
-      display: block;
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background-image: url('{{ section.settings.imagesupport | img_url: 'master' }}');
-      background-repeat: no-repeat;
-      background-position: 50% 0;
-      background-size: cover;
-      mix-blend-mode: luminosity;
-     /* opacity: 0.5;*/
-    }
+ 
 
     .Footer-bottom {
       background: {{ section.settings.background-footer-bottom}};
       color: {{ section.settings.text-color}};
       height: 150px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    
     }
-    .Footer__Copyright {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+
+  /*Footer*/
+
+#section-footer > .Container {
+  background: #282828;
+}
+
+.Footer__scrollTop {
+  cursor: pointer;
+  position: fixed;
+  bottom: 34px;
+  right: 20px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  top: auto;
+  left: auto;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #fff;
+  z-index: 100;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.Footer__scrollTop svg {
+  display: block;
+  width: 48%;
+  height: 36%;
+  margin-bottom: 2px;
+  fill: #000;
+}
+
+.Footer__Background-Image {
+  position: relative;
+}
+
+.Footer__Background-Image .ImageHero__ImageWrapper {
+  mix-blend-mode: luminosity;
+  background: rgba(0, 0, 0, 0.58) 0% 0% no-repeat padding-box;
+  opacity: .5;
+}
+
+.Footer__Background-Image .TrustBadge__Wrapper,
+.Footer__Background-Image .Footer__Inner {
+  position: relative;
+  z-index: 2;
+}
+
+.Footer__Background-Image .TrustBadge__Wrapper {
+  height: auto;
+  max-width: none;
+  margin: 0 -10px;
+}
+
+.Footer__Background-Image .TrustBadge__Wrapper .TrustBadge__col{
+  padding: 0 10px;
+}
+
+.Footer__Background-Image .Footer__Inner {
+  margin: 0 -12px 64px -12px;
+  display: flex;
+}
+
+.Footer__Background-Image .Footer__Inner .Footer__Block .Linklist {
+  letter-spacing: 2.1px;
+}
+
+.Footer__Reviews p {
+  display: block;
+  text-align: center;
+}
+
+
+@media screen and (max-width: 640px) {
+  .Footer__Background-Image .Footer__Inner .Footer__Block {
+    margin: 0 12px;
   }
-  .Footer__Reviews {
-    display: flex;
+
+  .Footer__Background-Image .Footer__Inner .Footer__Block .Linklist {
+    font-size: 16px;
+    line-height: 32px;
+  }
+
+}
+
+@media screen and (min-width: 641px) {
+  .Footer__Background-Image .Footer__Inner {
+    margin: 0 -20px 80px -20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Footer__Background-Image .Footer__Inner .Footer__Block:nth-of-type(3){
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1007px) {
+  .Footer__Background-Image .Footer__Inner .Footer__Block:nth-of-type(4) {
+    display: none;
+  }
+}
+
+.Footer__Background-Image .Footer__Inner .Footer__Title.Heading {
+  font-size: 14px;
+  line-height: 32px;
+  font-weight: 400;
+  letter-spacing: 2.1px;
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 768px){
+
+  .Footer__Block {
+    width: 33%;
+    flex-basis: 33%;
+    margin-top: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .Footer__Background-Image .Footer__Inner .Footer__Block .Footer__Title.Heading {
+    font-size: 18px;
+  }
+}
+
+
+
+@media screen and (min-width: 1008px) {
+  .Footer__Block {
     width: 25%;
-    gap: 7px;
+    flex-basis: 25%;
+    margin-top: 0;
+    padding-left: 20px;
+    padding-right: 20px;
   }
-  .Footer__Aside .shopProperties .shopProperties__Wrapper .shopProperty > span > h4 {
-    color: #000;
+
+
+}
+
+
+
+.Footer__Background-Image .Footer__Inner .Footer__Block .Linklist__Item{
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 200;
+}
+
+.Footer__Background-Image .Footer__Inner .Footer__Block .Linklist__Item:hover,
+.Footer__Background-Image .Footer__Inner .Footer__Block .Linklist__Item:focus {
+  text-decoration: underline;
+}
+
+.Footer__Background-Image .TrustBadge__col h4 {
+  color: #fff;
+}
+
+.Footer__Reviews {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.Footer__Aside {
+  padding: 14px 0 0;
+}
+
+.Footer__PaymentList li {
+  line-height: 0;
+}
+
+.Footer__Reviews p,
+.Footer__Reviews span{
+  text-transform: uppercase;
+  margin-bottom: 0;
+  display: inline-block;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 1.5px;
+  margin-right: 10px;
+}
+
+.Footer__Reviews p {
+
+}
+
+.Footer__Reviews span{
+  margin-right: 0;
+}
+
+.Footer__Copyright {
+  padding: 14px 0;
+}
+
+.Footer__Copyright a {
+  color: #fff;
+}
+
+.Footer__Reviews  svg{
+  margin-right: 8px;
+  width: 10px;
+  height: 10px;
+}
+
+.Footer__Reviews  svg:last-of-type{
+  margin-right: 10px;
+}
+
+.Footer__Background-Image .Footer__Inner .Footer__Block:last-of-type {
+  padding-right: 0;
+}
+
+@media screen and (max-width: 480px){
+.Footer__PaymentList {
+  margin: 0 0 10px 0;
+}
+}
+
+.Footer__Logo {
+  display: block;
+  width: 100%;
+  margin: 0 0 64px 0;
+}
+.Footer__Logo .Header__LogoImage {
+  margin: 0;
+}
+
+@media screen and (min-width: 680px){
+  .Footer__Copyright {
+    padding: 0;
   }
+}
+
+@media screen and (min-width: 1041px){
+
+  .Footer__Reviews svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .Footer__Reviews p {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 2.1px;
+    margin-right: 40px;
+  }
+
+  .Footer__Aside{
+    padding: 32px 0;
+  }
+
+  .Footer__Background-Image .Footer__Inner .Footer__Block .Linklist__Item {
+    font-size: 14px;
+  }
+
+  #section-footer > .Container {
+    background: #000;
+  }
+}
 
 
 
