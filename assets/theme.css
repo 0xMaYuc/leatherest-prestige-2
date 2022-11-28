@@ -8242,7 +8242,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   .Footer__Aside {
     text-align: left;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
   }
