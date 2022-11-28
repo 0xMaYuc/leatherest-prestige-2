@@ -6,7 +6,7 @@
         <div class="ImageHero__ImageWrapper">
           <div class="ImageHero__Image Image--lazyLoaded" data-optimumx="1.4" data-expand="-150" data-bgset="//cdn.shopify.com/s/files/1/0412/1591/8230/files/christopher-burns-NBr-AjfKVD4-unsplash_1_1000x_crop_center.jpg?v=1615570458 750w, //cdn.shopify.com/s/files/1/0412/1591/8230/files/christopher-burns-NBr-AjfKVD4-unsplash_1_1000x.jpg?v=1615570458 1000w, //cdn.shopify.com/s/files/1/0412/1591/8230/files/christopher-burns-NBr-AjfKVD4-unsplash_1_1500x.jpg?v=1615570458 1500w" style="background-image: url(&quot;https://cdn.shopify.com/s/files/1/0412/1591/8230/files/christopher-burns-NBr-AjfKVD4-unsplash_1_1500x.jpg?v=1615570458&quot;);">
           <picture style="display: none;">
-            <source data-srcset="//cdn.shopify.com/s/files/1/0412/1591/8230/files/christopher-burns-NBr-AjfKVD4-unsplash_1_1500x.jpg?v=1615570458"><img alt="" class="lazyautosizes Image--lazyLoaded" data-sizes="auto" data-optimumx="1.4" data-parent-fit="cover" data-srcset="" sizes="1265px">
+            <source data-srcset="{{ section.settings.imagesupport | img_url: 'master' }}"><img alt="" class="lazyautosizes Image--lazyLoaded" data-sizes="auto" data-optimumx="1.4" data-parent-fit="cover" data-srcset="" sizes="1265px">
           </picture>
           </div>
           <noscript>
@@ -171,7 +171,7 @@
   }
 
   .Footer__Aside .shopProperty:nth-of-type(2n) > span > h4 {
-    margin-left:0px;
+    margin-left:0px !important;
   }
   /*Footer*/
 
