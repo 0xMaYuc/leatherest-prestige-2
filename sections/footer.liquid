@@ -18,7 +18,7 @@
 
         <div class="Container">
           <div class="Footer__Logo">
-            <img class="Header__LogoImage Header__LogoImage--primary" src="//cdn.shopify.com/s/files/1/0412/1591/8230/t/21/assets/logo-font.svg?v=2217942138836225491668430841" alt="Leatherest" width="145">
+            <img class="Header__LogoImage Header__LogoImage--primary" src="//cdn.shopify.com/s/files/1/0412/1591/8230/files/logo-wappen-font_1_1_140x.png?v=1613705086" alt="Leatherest" width="145">
           </div>
           {%- if section.blocks.size > 0 -%}
             <div class="Footer__Inner">
@@ -157,20 +157,9 @@
 </footer>
 
 
-{%- if settings.footer_background == settings.background -%}
-  <style>
-    .Footer {
-      border-top: 1px solid var(--border-color);
-      position: relative;
-    }
- 
 
-    .Footer-bottom {
-      background: {{ section.settings.background-footer-bottom}};
-      color: {{ section.settings.text-color}};
-      height: 150px;
-    
-    }
+  <style>
+
 
     .Footer__Reviews {
       margin: 0 20px;
@@ -442,7 +431,7 @@
 
 
   </style>
-{%- endif -%}
+
 
 {% schema %}
 {
