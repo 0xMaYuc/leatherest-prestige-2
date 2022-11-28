@@ -4,13 +4,13 @@
     <div class=" Footer__Background-Image ">
       
         <div class="ImageHero__ImageWrapper">
-          <div class="ImageHero__Image Image--lazyLoaded" data-optimumx="1.4" data-expand="-150" data-bgset="//cdn.shopify.com/s/files/1/0412/1591/8230/files/christopher-burns-NBr-AjfKVD4-unsplash_1_1000x_crop_center.jpg?v=1615570458 750w, //cdn.shopify.com/s/files/1/0412/1591/8230/files/christopher-burns-NBr-AjfKVD4-unsplash_1_1000x.jpg?v=1615570458 1000w, //cdn.shopify.com/s/files/1/0412/1591/8230/files/christopher-burns-NBr-AjfKVD4-unsplash_1_1500x.jpg?v=1615570458 1500w" style="background-image: url(&quot;https://cdn.shopify.com/s/files/1/0412/1591/8230/files/christopher-burns-NBr-AjfKVD4-unsplash_1_1500x.jpg?v=1615570458&quot;);">
+          <div class="ImageHero__Image Image--lazyLoaded" data-optimumx="1.4" data-expand="-150" data-bgset="{{ section.settings.imagesupport | img_url: 'master' }}" style="background-image: url(&quot;{{ section.settings.imagesupport | img_url: 'master' }}&quot;);">
           <picture style="display: none;">
             <source data-srcset="{{ section.settings.imagesupport | img_url: 'master' }}"><img alt="" class="lazyautosizes Image--lazyLoaded" data-sizes="auto" data-optimumx="1.4" data-parent-fit="cover" data-srcset="" sizes="1265px">
           </picture>
           </div>
           <noscript>
-            <div class="ImageHero__Image" style="background-image: url(//cdn.shopify.com/s/files/1/0412/1591/8230/files/christopher-burns-NBr-AjfKVD4-unsplash_1_1500x.jpg?v=1615570458)"></div>
+            <div class="ImageHero__Image" style="background-image: url({{ section.settings.imagesupport | img_url: 'master' }})"></div>
           </noscript>
         </div>
       
