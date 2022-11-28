@@ -8201,7 +8201,6 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 .Footer__PaymentList {
   margin: 54px -24px 0 -24px;
   padding-top: 28px;
-  border-top: 1px solid var(--footer-border-color);
 }
 
 .Footer__PaymentList svg {
